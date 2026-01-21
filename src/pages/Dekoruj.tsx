@@ -4,9 +4,9 @@ import PageHero from "@/components/PageHero";
 import SectionHeader from "@/components/SectionHeader";
 import { ArrowRight } from "lucide-react";
 import heroDecoration from "@/assets/hero-decoration.png";
-import decoration1 from "@/assets/decoration1.png";
-import decoration2 from "@/assets/decoration2.png";
-import decoration3 from "@/assets/decoration3.png";
+import decoration1 from "@/assets/decorate-1.png";
+import decoration2 from "@/assets/decorate-2.png";
+import decoration3 from "@/assets/decorate-3.png";
 
 const decorations = [
   {
