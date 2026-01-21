@@ -5,31 +5,31 @@ import SectionHeader from "@/components/SectionHeader";
 import { ArrowRight } from "lucide-react";
 import heroFloors from "@/assets/hero-floors.jpg";
 import heroDoors from "@/assets/hero-doors.png";
+import floor1 from "@/assets/floor-1.jpg";
+import floor2 from "@/assets/floor-2.jpg";
+import floor3 from "@/assets/floor-3.jpg";
+import floor4 from "@/assets/floor-4.jpg";
 
 const doorSystems = [
   {
-    title: "Drzwi z ukrytą ościeżnicą",
-    description:
-      "Nowoczesne rozwiązanie zapewniające minimalistyczny efekt i idealnie gładką powierzchnię ściany.",
-    image: heroDoors,
+    title: "Podłogi 1",
+    description: "Opis do podłogi 1",
+    image: floor1,
   },
   {
-    title: "Drzwi przesuwne",
-    description:
-      "Praktyczne i eleganckie rozwiązanie oszczędzające miejsce w pomieszczeniu.",
-    image: heroDoors,
+    title: "Podłogi 2",
+    description: "Opis do podłogi 2",
+    image: floor2,
   },
   {
-    title: "Drzwi klasyczne",
-    description:
-      "Tradycyjne wzornictwo połączone z nowoczesną technologią wykonania.",
-    image: heroDoors,
+    title: "Podłogi 3",
+    description: "Opis do podłogi 3",
+    image: floor3,
   },
   {
-    title: "Rozwiązania szklane",
-    description:
-      "Przeszklenia i systemy szklane nadające lekkości i przestrzeni każdemu wnętrzu.",
-    image: heroDoors,
+    title: "Podłogi 4",
+    description: "Opis do podłogi 4",
+    image: floor4,
   },
 ];
 
@@ -94,19 +94,19 @@ const TrzymajPoziom = () => {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <SectionHeader title="Klamki nowoczesne i minimalistyczne" />
+              <SectionHeader title="Dodatkowy opis lub informacje dla zakładki" />
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Klamki dostajemy nie tylko w różnych wykończeniach, ale też
-                stylach – dla drzwi zewnętrznych, wewnętrznych szklanych i
-                klasycznych. Oferujemy pełne zestawy szyldem, okuciami,
-                powłokami od drzwi przesuwnych oraz stale-elegancje
-                podłączeniowe stylów nowoczesnych i minimalistycznych.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+                hic iste quisquam, ut incidunt tenetur nesciunt facilis itaque
+                maiores odio ullam aspernatur numquam ducimus, aut perspiciatis
+                ad quas a suscipit modi sint possimus. Esse provident fugiat
+                deleniti harum. Voluptate omnis atque natus aliquid illum ipsum?
               </p>
               <Link
                 to="/kontakt"
                 className="inline-flex items-center gap-2 btn-primary"
               >
-                Zobacz galerię klamek
+                CTA Button
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </div>

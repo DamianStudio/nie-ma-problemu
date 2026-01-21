@@ -16,12 +16,11 @@ const Kontakt = () => {
       {/* Contact Info Section */}
       <section className="section-padding bg-card">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-12"> */}
+          <div className="max-w-3xl mx-auto grid grid-cols-1 gap-12">
             {/* Contact Details */}
             <div>
-              <SectionHeader
-                title="Dane kontaktowe"
-              />
+              <SectionHeader title="Dane kontaktowe" />
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -29,9 +28,12 @@ const Kontakt = () => {
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">Adres</h3>
+                    <h3 className="font-semibold text-foreground mb-1">
+                      Adres
+                    </h3>
                     <p className="text-muted-foreground">
-                      ul. Wolności 16<br />
+                      ul. Wolności 16
+                      <br />
                       Gdynia, Polska
                     </p>
                   </div>
@@ -42,7 +44,9 @@ const Kontakt = () => {
                     <Mail className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">Email</h3>
+                    <h3 className="font-semibold text-foreground mb-1">
+                      Email
+                    </h3>
                     <a
                       href="mailto:kontakt@niemaproblemu.com.pl"
                       className="text-primary hover:underline"
@@ -57,9 +61,12 @@ const Kontakt = () => {
                     <Clock className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">Godziny otwarcia</h3>
+                    <h3 className="font-semibold text-foreground mb-1">
+                      Godziny otwarcia
+                    </h3>
                     <p className="text-muted-foreground">
-                      Poniedziałek - Piątek: 9:00 - 17:00<br />
+                      Poniedziałek - Piątek: 9:00 - 17:00
+                      <br />
                       Sobota: 10:00 - 14:00
                     </p>
                   </div>
@@ -68,7 +75,9 @@ const Kontakt = () => {
 
               {/* Social Media */}
               <div className="mt-10">
-                <h3 className="font-semibold text-foreground mb-4">Obserwuj nas</h3>
+                <h3 className="font-semibold text-foreground mb-4">
+                  Obserwuj nas
+                </h3>
                 <div className="flex gap-4">
                   <a
                     href="https://facebook.com/niemaproblemugdynia"
@@ -93,7 +102,7 @@ const Kontakt = () => {
             </div>
 
             {/* Info Card */}
-            <div className="bg-section-alt rounded-lg p-8">
+            {/* <div className="bg-section-alt rounded-lg p-8">
               <h3 className="text-2xl font-serif font-semibold text-foreground mb-6">
                 Dlaczego warto nas odwiedzić?
               </h3>
@@ -119,14 +128,14 @@ const Kontakt = () => {
                   <span>Parking dla klientów</span>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
 
       {/* Map Section */}
       <section className="section-padding bg-section-alt">
-        <div className="container-custom">
+        {/* <div className="container-custom">
           <SectionHeader
             title="Jak do nas trafić?"
             subtitle="Znajdujemy się w centrum Gdyni, w dogodnej lokalizacji z łatwym dojazdem"
@@ -146,7 +155,7 @@ const Kontakt = () => {
               className="w-full"
             />
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Bottom CTA */}
@@ -156,7 +165,8 @@ const Kontakt = () => {
             Masz pytania? Zadzwoń lub napisz!
           </h2>
           <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-            Chętnie odpowiemy na wszystkie pytania i pomożemy w realizacji Twojego projektu.
+            Chętnie odpowiemy na wszystkie pytania i pomożemy w realizacji
+            Twojego projektu.
           </p>
           <a
             href="mailto:kontakt@niemaproblemu.com.pl"
