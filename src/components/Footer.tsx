@@ -84,8 +84,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-footer-foreground/20 text-center">
           <p className="text-footer-foreground/50 text-sm">
-            © {new Date().getFullYear()} Nie Ma Problemu. Wszelkie prawa
-            zastrzeżone.
+            © 2026 studio-www. Wszelkie prawa zastrzeżone.
           </p>
         </div>
       </div>
