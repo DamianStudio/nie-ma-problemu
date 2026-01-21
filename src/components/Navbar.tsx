@@ -9,7 +9,7 @@ const navLinks = [
   { path: "/trzymaj-poziom", label: "Trzymaj poziom" },
   { path: "/dekoruj", label: "Dekoruj" },
   { path: "/ogladaj", label: "Oglądaj" },
-  { path: "/kontakt", label: "Kontakt z nami" },
+  { path: "/kontakt", label: "Kontakt" },
 ];
 
 const Navbar = () => {

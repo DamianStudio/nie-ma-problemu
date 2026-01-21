@@ -4,27 +4,31 @@ import PageHero from "@/components/PageHero";
 import SectionHeader from "@/components/SectionHeader";
 import { ArrowRight } from "lucide-react";
 import heroFloors from "@/assets/hero-floors.jpg";
-import heroDoors from "@/assets/hero-doors.jpg";
+import heroDoors from "@/assets/hero-doors.png";
 
 const doorSystems = [
   {
     title: "Drzwi z ukrytą ościeżnicą",
-    description: "Nowoczesne rozwiązanie zapewniające minimalistyczny efekt i idealnie gładką powierzchnię ściany.",
+    description:
+      "Nowoczesne rozwiązanie zapewniające minimalistyczny efekt i idealnie gładką powierzchnię ściany.",
     image: heroDoors,
   },
   {
     title: "Drzwi przesuwne",
-    description: "Praktyczne i eleganckie rozwiązanie oszczędzające miejsce w pomieszczeniu.",
+    description:
+      "Praktyczne i eleganckie rozwiązanie oszczędzające miejsce w pomieszczeniu.",
     image: heroDoors,
   },
   {
     title: "Drzwi klasyczne",
-    description: "Tradycyjne wzornictwo połączone z nowoczesną technologią wykonania.",
+    description:
+      "Tradycyjne wzornictwo połączone z nowoczesną technologią wykonania.",
     image: heroDoors,
   },
   {
     title: "Rozwiązania szklane",
-    description: "Przeszklenia i systemy szklane nadające lekkości i przestrzeni każdemu wnętrzu.",
+    description:
+      "Przeszklenia i systemy szklane nadające lekkości i przestrzeni każdemu wnętrzu.",
     image: heroDoors,
   },
 ];
@@ -42,14 +46,13 @@ const TrzymajPoziom = () => {
       <section className="section-padding bg-card">
         <div className="container-custom">
           <div className="max-w-3xl">
-            <SectionHeader
-              title="Systemy drzwiowe – nowoczesne i praktyczne"
-            />
+            <SectionHeader title="Systemy drzwiowe – nowoczesne i praktyczne" />
             <p className="text-muted-foreground leading-relaxed">
-              Wybór drzwi to decyzja, która wpływa nie tylko na funkcjonalność, ale i styl 
-              całego wnętrza. Oferujemy szeroką gamę drzwi wewnętrznych – od klasycznych 
-              modeli po innowacyjne rozwiązania z ukrytą ościeżnicą, które zapewniają 
-              minimalistyczny, elegancki efekt.
+              Wybór drzwi to decyzja, która wpływa nie tylko na funkcjonalność,
+              ale i styl całego wnętrza. Oferujemy szeroką gamę drzwi
+              wewnętrznych – od klasycznych modeli po innowacyjne rozwiązania z
+              ukrytą ościeżnicą, które zapewniają minimalistyczny, elegancki
+              efekt.
             </p>
           </div>
         </div>
@@ -91,15 +94,13 @@ const TrzymajPoziom = () => {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <SectionHeader
-                title="Klamki nowoczesne i minimalistyczne"
-              />
+              <SectionHeader title="Klamki nowoczesne i minimalistyczne" />
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Klamki dostajemy nie tylko w różnych wykończeniach, ale też stylach – 
-                dla drzwi zewnętrznych, wewnętrznych szklanych i klasycznych. 
-                Oferujemy pełne zestawy szyldem, okuciami, powłokami od drzwi 
-                przesuwnych oraz stale-elegancje podłączeniowe stylów 
-                nowoczesnych i minimalistycznych.
+                Klamki dostajemy nie tylko w różnych wykończeniach, ale też
+                stylach – dla drzwi zewnętrznych, wewnętrznych szklanych i
+                klasycznych. Oferujemy pełne zestawy szyldem, okuciami,
+                powłokami od drzwi przesuwnych oraz stale-elegancje
+                podłączeniowe stylów nowoczesnych i minimalistycznych.
               </p>
               <Link
                 to="/kontakt"

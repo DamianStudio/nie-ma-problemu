@@ -3,33 +3,44 @@ import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
 import SectionHeader from "@/components/SectionHeader";
 import { ArrowRight } from "lucide-react";
-import heroDoors from "@/assets/hero-doors.jpg";
+import heroDoors from "@/assets/hero-doors.png";
+import doorsHidden from "@/assets/doors-hidden.jpg";
+import doorsClassic from "@/assets/doors-classic.jpg";
+import doorsSliding from "@/assets/doors-sliding.jpg";
+import doorsOutside from "@/assets/doors-outside.jpg";
+import doorsGlass from "@/assets/doors-glass.jpg";
+import doorsHandle from "@/assets/doors-handle.png";
 
 const doorTypes = [
   {
     title: "Drzwi z ukrytą ościeżnicą",
-    description: "Minimalistyczny design z idealnie gładką powierzchnią ściany. Nowoczesne rozwiązanie dla wymagających.",
-    image: heroDoors,
+    description:
+      "Minimalistyczny design z idealnie gładką powierzchnią ściany. Nowoczesne rozwiązanie dla wymagających.",
+    image: doorsHidden,
   },
   {
     title: "Drzwi przesuwne",
-    description: "Oszczędność miejsca i elegancki wygląd. Idealne do małych pomieszczeń i nowoczesnych aranżacji.",
-    image: heroDoors,
+    description:
+      "Oszczędność miejsca i elegancki wygląd. Idealne do małych pomieszczeń i nowoczesnych aranżacji.",
+    image: doorsSliding,
   },
   {
     title: "Drzwi klasyczne",
-    description: "Ponadczasowy styl z tradycyjną ościeżnicą. Doskonałe do klasycznych i eleganckich wnętrz.",
-    image: heroDoors,
+    description:
+      "Ponadczasowy styl z tradycyjną ościeżnicą. Doskonałe do klasycznych i eleganckich wnętrz.",
+    image: doorsClassic,
   },
   {
     title: "Drzwi zewnętrzne",
-    description: "Bezpieczeństwo i izolacja termiczna. Stylowe wejście do Twojego domu.",
-    image: heroDoors,
+    description:
+      "Bezpieczeństwo i izolacja termiczna. Stylowe wejście do Twojego domu.",
+    image: doorsOutside,
   },
   {
     title: "Rozwiązania szklane",
-    description: "Przeszklenia i drzwi szklane, które dodają przestrzeni i światła każdemu wnętrzu.",
-    image: heroDoors,
+    description:
+      "Przeszklenia i drzwi szklane, które dodają przestrzeni i światła każdemu wnętrzu.",
+    image: doorsGlass,
   },
 ];
 
@@ -46,14 +57,13 @@ const Otwieraj = () => {
       <section className="section-padding bg-card">
         <div className="container-custom">
           <div className="max-w-3xl">
-            <SectionHeader
-              title="Systemy drzwiowe – nowoczesne i praktyczne"
-            />
+            <SectionHeader title="Systemy drzwiowe – nowoczesne i praktyczne" />
             <p className="text-muted-foreground leading-relaxed">
-              Wybór drzwi to decyzja, która wpływa nie tylko na funkcjonalność, ale i styl 
-              całego wnętrza. Oferujemy szeroką gamę drzwi wewnętrznych – od klasycznych 
-              modeli po innowacyjne rozwiązania z ukrytą ościeżnicą, które zapewniają 
-              minimalistyczny, elegancki efekt.
+              Wybór drzwi to decyzja, która wpływa nie tylko na funkcjonalność,
+              ale i styl całego wnętrza. Oferujemy szeroką gamę drzwi
+              wewnętrznych – od klasycznych modeli po innowacyjne rozwiązania z
+              ukrytą ościeżnicą, które zapewniają minimalistyczny, elegancki
+              efekt.
             </p>
           </div>
         </div>
@@ -95,15 +105,13 @@ const Otwieraj = () => {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <SectionHeader
-                title="Klamki nowoczesne i minimalistyczne"
-              />
+              <SectionHeader title="Klamki nowoczesne i minimalistyczne" />
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Klamki dostajemy nie tylko w różnych wykończeniach, ale też stylach – 
-                dla drzwi zewnętrznych, wewnętrznych szklanych i klasycznych. 
-                Oferujemy pełne zestawy szyldem, okuciami, powłokami od drzwi 
-                przesuwnych oraz stale-elegancje podłączeniowe stylów 
-                nowoczesnych i minimalistycznych.
+                Klamki dostajemy nie tylko w różnych wykończeniach, ale też
+                stylach – dla drzwi zewnętrznych, wewnętrznych szklanych i
+                klasycznych. Oferujemy pełne zestawy szyldem, okuciami,
+                powłokami od drzwi przesuwnych oraz stale-elegancje
+                podłączeniowe stylów nowoczesnych i minimalistycznych.
               </p>
               <Link
                 to="/kontakt"
@@ -114,11 +122,16 @@ const Otwieraj = () => {
               </Link>
             </div>
             <div className="bg-muted rounded-lg h-[300px] md:h-[400px] flex items-center justify-center">
-              <div className="text-center p-8">
+              <img
+                src={doorsHandle}
+                alt="Klamki"
+                className="w-full h-full object-cover rounded-lg"
+              />
+              {/* <div className="text-center p-8">
                 <p className="text-muted-foreground italic">
                   Galeria klamek i akcesoriów
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

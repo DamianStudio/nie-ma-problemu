@@ -4,7 +4,7 @@ import { MapPin, Mail, Facebook, Instagram } from "lucide-react";
 const Footer = () => {
   return (
     <footer className="bg-footer text-footer-foreground">
-      <div className="container-custom section-padding">
+      <div className="container-custom section-padding pb-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Company Info */}
           <div>
@@ -61,22 +61,6 @@ const Footer = () => {
               >
                 <Instagram className="w-5 h-5" />
               </a>
-            </div>
-
-            {/* Quick Links */}
-            <div className="space-y-2">
-              <Link
-                to="/kontakt"
-                className="block text-footer-foreground/70 hover:text-primary transition-colors"
-              >
-                Kontakt z nami
-              </Link>
-              <Link
-                to="/ogladaj"
-                className="block text-footer-foreground/70 hover:text-primary transition-colors"
-              >
-                Nasze realizacje
-              </Link>
             </div>
           </div>
         </div>

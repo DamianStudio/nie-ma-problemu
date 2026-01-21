@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
 import { ArrowRight, Shield, Award, Users } from "lucide-react";
-import heroHome from "@/assets/hero-home.jpg";
-import heroDoors from "@/assets/hero-doors.jpg";
-import heroDecoration from "@/assets/hero-decoration.jpg";
+import heroHome from "@/assets/hero-home.png";
+import heroDoors from "@/assets/hero-doors.png";
+import heroDecoration from "@/assets/hero-decoration.png";
 import heroFloors from "@/assets/hero-floors.jpg";
 
 const Index = () => {
@@ -24,7 +24,10 @@ const Index = () => {
               Tworzymy piękne
               <br />i funkcjonalne wnętrza
             </h1>
-            <p className="text-lg md:text-xl text-card/90 mb-8 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <p
+              className="text-lg md:text-xl text-card mb-8 animate-fade-in"
+              style={{ animationDelay: "0.2s" }}
+            >
               Drzwi, podłogi, tapety i sztukateria z montażem
             </p>
             <Link
@@ -46,25 +49,37 @@ const Index = () => {
             <div>
               <h2 className="section-title">Nie ma problemu!</h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Gwarantujemy perfekcyjne wykończenie wnętrz – kompleksowe usługi z
-                dbałością o każdy szczegół. Twój komfort jest naszym priorytetem.
+                Gwarantujemy perfekcyjne wykończenie wnętrz – kompleksowe usługi
+                z dbałością o każdy szczegół. Twój komfort jest naszym
+                priorytetem.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Specjalizujemy się w montażu drzwi, podłóg, tapet oraz sztukaterii.
-                Nasze wieloletnie doświadczenie gwarantuje najwyższą jakość wykonania.
+                Specjalizujemy się w montażu drzwi, podłóg, tapet oraz
+                sztukaterii. Nasze wieloletnie doświadczenie gwarantuje
+                najwyższą jakość wykonania.
               </p>
             </div>
             <div className="grid grid-cols-3 gap-4 text-center">
               <div className="p-6">
-                <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">15+</div>
-                <p className="text-muted-foreground text-sm">Lat doświadczenia</p>
+                <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">
+                  15+
+                </div>
+                <p className="text-muted-foreground text-sm">
+                  Lat doświadczenia
+                </p>
               </div>
               <div className="p-6">
-                <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">500+</div>
-                <p className="text-muted-foreground text-sm">Zadowolonych klientów</p>
+                <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">
+                  500+
+                </div>
+                <p className="text-muted-foreground text-sm">
+                  Zadowolonych klientów
+                </p>
               </div>
               <div className="p-6">
-                <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">100%</div>
+                <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">
+                  100%
+                </div>
                 <p className="text-muted-foreground text-sm">Satysfakcji</p>
               </div>
             </div>
@@ -92,8 +107,9 @@ const Index = () => {
                 Drzwi i klamki
               </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Znakomite drzwi wewnętrzne i zewnętrzne w różnorodnych stylach – od
-                klasycznych modeli po nowoczesne rozwiązania z ukrytą ościeżnicą.
+                Znakomite drzwi wewnętrzne i zewnętrzne w różnorodnych stylach –
+                od klasycznych modeli po nowoczesne rozwiązania z ukrytą
+                ościeżnicą.
               </p>
               <Link
                 to="/otwieraj"
@@ -123,7 +139,8 @@ const Index = () => {
               </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Wyjątkowe wzory tapet, eleganckie podłogi drewniane i stylowa
-                sztukateria – wszystko, czego potrzebujesz do stworzenia wyjątkowego wnętrza.
+                sztukateria – wszystko, czego potrzebujesz do stworzenia
+                wyjątkowego wnętrza.
               </p>
               <Link
                 to="/dekoruj"
@@ -152,8 +169,8 @@ const Index = () => {
                 Dla wykończeniowców
               </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Profesjonalne rozwiązania dla fachowców – systemy drzwiowe, klamki i
-                akcesoria montażowe najwyższej jakości.
+                Profesjonalne rozwiązania dla fachowców – systemy drzwiowe,
+                klamki i akcesoria montażowe najwyższej jakości.
               </p>
               <Link
                 to="/trzymaj-poziom"
@@ -170,19 +187,19 @@ const Index = () => {
       {/* Why Choose Us */}
       <section className="section-padding bg-card">
         <div className="container-custom">
-          <SectionHeader
-            title="Dlaczego warto z nami pracować?"
-            centered
-          />
+          <SectionHeader title="Dlaczego warto z nami pracować?" centered />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-8">
               <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
                 <Shield className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-serif font-semibold mb-4">Kompleksowa obsługa</h3>
+              <h3 className="text-xl font-serif font-semibold mb-4">
+                Kompleksowa obsługa
+              </h3>
               <p className="text-muted-foreground">
-                Dostarczamy i montujemy – wszystko w jednym miejscu, bez zbędnych formalności.
+                Dostarczamy i montujemy – wszystko w jednym miejscu, bez
+                zbędnych formalności.
               </p>
             </div>
 
@@ -190,9 +207,12 @@ const Index = () => {
               <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
                 <Award className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-serif font-semibold mb-4">Znakomite materiały</h3>
+              <h3 className="text-xl font-serif font-semibold mb-4">
+                Znakomite materiały
+              </h3>
               <p className="text-muted-foreground">
-                Współpracujemy tylko z renomowanymi producentami, gwarantując najwyższą jakość.
+                Współpracujemy tylko z renomowanymi producentami, gwarantując
+                najwyższą jakość.
               </p>
             </div>
 
@@ -200,9 +220,12 @@ const Index = () => {
               <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
                 <Users className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-serif font-semibold mb-4">Indywidualne podejście</h3>
+              <h3 className="text-xl font-serif font-semibold mb-4">
+                Indywidualne podejście
+              </h3>
               <p className="text-muted-foreground">
-                Każdy projekt traktujemy indywidualnie, dbając o Twoje potrzeby i oczekiwania.
+                Każdy projekt traktujemy indywidualnie, dbając o Twoje potrzeby
+                i oczekiwania.
               </p>
             </div>
           </div>
@@ -216,7 +239,8 @@ const Index = () => {
             Jesteś zadowolony z naszych usług?
           </h2>
           <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-            Skontaktuj się z nami i rozpocznij transformację swojego wnętrza już dziś.
+            Skontaktuj się z nami i rozpocznij transformację swojego wnętrza już
+            dziś.
           </p>
           <Link
             to="/kontakt"
