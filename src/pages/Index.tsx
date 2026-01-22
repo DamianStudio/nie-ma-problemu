@@ -56,8 +56,8 @@ const Index = () => {
                 każdy detal. Działamy mobilnie – dojeżdżamy na miejsce budowy.
               </p>
             </div>
-            <div className="grid grid-cols-3 gap-4 text-center">
-              <div className="p-6">
+            <div className="grid grid-cols-3 gap-4 text-center pr-2">
+              <div className="p-1">
                 <div className="text-4xl md:text-5xl font-sansTitle font-bold text-primary mb-2">
                   15+
                 </div>
@@ -65,7 +65,7 @@ const Index = () => {
                   Lat doświadczenia
                 </p>
               </div>
-              <div className="p-6">
+              <div className="p-1">
                 <div className="text-4xl md:text-5xl font-sansTitle font-bold text-primary mb-2">
                   500+
                 </div>
@@ -73,7 +73,7 @@ const Index = () => {
                   Zadowolonych klientów
                 </p>
               </div>
-              <div className="p-6">
+              <div className="p-1">
                 <div className="text-4xl md:text-5xl font-sansTitle font-bold text-primary mb-2">
                   100%
                 </div>
