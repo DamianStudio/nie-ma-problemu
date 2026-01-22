@@ -33,7 +33,7 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`nav-link ${isActive(link.path) ? "nav-link-active" : ""}`}
+                className={`nav-link uppercase ${isActive(link.path) ? "nav-link-active" : ""}`}
               >
                 {link.label}
               </Link>

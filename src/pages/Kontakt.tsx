@@ -1,7 +1,15 @@
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
 import SectionHeader from "@/components/SectionHeader";
-import { MapPin, Mail, Phone, Clock, Facebook, Instagram } from "lucide-react";
+import {
+  MapPin,
+  Mail,
+  Phone,
+  Clock,
+  Facebook,
+  Instagram,
+  Youtube,
+} from "lucide-react";
 import heroContact from "@/assets/hero-contact.jpg";
 
 const Kontakt = () => {
@@ -16,8 +24,8 @@ const Kontakt = () => {
       {/* Contact Info Section */}
       <section className="section-padding bg-card">
         <div className="container-custom">
-          {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-12"> */}
-          <div className="max-w-3xl mx-auto grid grid-cols-1 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* <div className="max-w-3xl mx-auto grid grid-cols-1 gap-12"> */}
             {/* Contact Details */}
             <div>
               <SectionHeader title="Dane kontaktowe" />
@@ -97,13 +105,45 @@ const Kontakt = () => {
                   >
                     <Instagram className="w-5 h-5" />
                   </a>
+                  <a
+                    href="https://youtube.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+                    aria-label="Youtube"
+                  >
+                    <Youtube className="w-5 h-5" />
+                  </a>
                 </div>
               </div>
             </div>
 
+            {/* <div className="container-custom"> */}
+            <div>
+              {/* <SectionHeader
+                title="Jak do nas trafić?"
+                subtitle="Znajdujemy się w centrum Gdyni, w dogodnej lokalizacji z łatwym dojazdem"
+                centered
+              /> */}
+
+              <div className="rounded-lg overflow-hidden shadow-xl">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2314.6751595261994!2d18.53881397684099!3d54.51838097265935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fda73817f73adf%3A0x57f7c8d93e3d5c7a!2sWolno%C5%9Bci%2016%2C%2081-327%20Gdynia!5e0!3m2!1spl!2spl!4v1706000000000!5m2!1spl!2spl"
+                  width="100%"
+                  height="450"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Lokalizacja Nie Ma Problemu - ul. Wolności 16, Gdynia"
+                  className="w-full"
+                />
+              </div>
+            </div>
+
             {/* Info Card */}
-            {/* <div className="bg-section-alt rounded-lg p-8">
-              <h3 className="text-2xl font-serif font-semibold text-foreground mb-6">
+            {/* <div className="bg-section-alt rounded-lg p-8"> */}
+            {/* <h3 className="text-2xl font-sansTitle font-semibold text-foreground mb-6">
                 Dlaczego warto nas odwiedzić?
               </h3>
               <ul className="space-y-4 text-muted-foreground">
@@ -127,8 +167,8 @@ const Kontakt = () => {
                   <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
                   <span>Parking dla klientów</span>
                 </li>
-              </ul>
-            </div> */}
+              </ul> */}
+            {/* </div> */}
           </div>
         </div>
       </section>
@@ -161,7 +201,7 @@ const Kontakt = () => {
       {/* Bottom CTA */}
       <section className="section-padding bg-primary">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-semibold text-primary-foreground mb-6">
+          <h2 className="text-3xl md:text-4xl font-sansTitle font-semibold text-primary-foreground mb-6">
             Masz pytania? Zadzwoń lub napisz!
           </h2>
           <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">

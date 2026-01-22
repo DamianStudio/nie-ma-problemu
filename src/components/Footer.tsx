@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MapPin, Mail, Facebook, Instagram } from "lucide-react";
+import { MapPin, Mail, Facebook, Instagram, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-serif font-semibold mb-4">
+            <h3 className="text-2xl font-sansTitle font-semibold mb-4">
               Nie Ma Problemu
             </h3>
             <p className="text-footer-foreground/70 mb-6">
@@ -60,6 +60,15 @@ const Footer = () => {
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-footer-foreground/10 flex items-center justify-center hover:bg-primary transition-colors"
+                aria-label="Youtube"
+              >
+                <Youtube className="w-5 h-5" />
               </a>
             </div>
           </div>

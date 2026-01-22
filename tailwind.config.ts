@@ -64,8 +64,8 @@ export default {
         "section-alt": "hsl(var(--section-alt))",
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
-        serif: ["Lato", "sans-serif"],
+        sans: ["Outfit", "sans-serif"],
+        sansTitle: ["Poppins", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

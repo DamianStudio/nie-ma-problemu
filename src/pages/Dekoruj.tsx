@@ -72,7 +72,7 @@ const Dekoruj = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                    <h3 className="text-xl font-serif font-semibold text-card mb-2">
+                    <h3 className="text-xl font-sansTitle font-semibold text-card mb-2">
                       {item.title}
                     </h3>
                     <p className="text-card/80 text-sm">{item.description}</p>
@@ -91,7 +91,9 @@ const Dekoruj = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-section-alt rounded-lg p-8 text-center card-hover">
-              <h3 className="text-xl font-serif font-semibold mb-4">Tapety</h3>
+              <h3 className="text-xl font-sansTitle font-semibold mb-4">
+                Tapety
+              </h3>
               <p className="text-muted-foreground">
                 Szeroki wybór wzorów od minimalistycznych po artystyczne
                 fototapety. Profesjonalny montaż z gwarancją.
@@ -99,7 +101,9 @@ const Dekoruj = () => {
             </div>
 
             <div className="bg-section-alt rounded-lg p-8 text-center card-hover">
-              <h3 className="text-xl font-serif font-semibold mb-4">Podłogi</h3>
+              <h3 className="text-xl font-sansTitle font-semibold mb-4">
+                Podłogi
+              </h3>
               <p className="text-muted-foreground">
                 Drewniane, winylowe i laminowane. Montaż z dbałością o każdy
                 detal.
@@ -107,7 +111,7 @@ const Dekoruj = () => {
             </div>
 
             <div className="bg-section-alt rounded-lg p-8 text-center card-hover">
-              <h3 className="text-xl font-serif font-semibold mb-4">
+              <h3 className="text-xl font-sansTitle font-semibold mb-4">
                 Sztukateria
               </h3>
               <p className="text-muted-foreground">
@@ -122,7 +126,7 @@ const Dekoruj = () => {
       {/* CTA */}
       <section className="section-padding bg-primary">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-semibold text-primary-foreground mb-6">
+          <h2 className="text-3xl md:text-4xl font-sansTitle font-semibold text-primary-foreground mb-6">
             Zainspirowany? Porozmawiajmy!
           </h2>
           <Link

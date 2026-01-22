@@ -20,7 +20,7 @@ const PageHero = ({ title, subtitle, backgroundImage }: PageHeroProps) => {
       <div className="relative z-10 container-custom  md:rounded-3xl bg-black/30">
         <div className="px-4 md:px-8 py-4 m-4">
           <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-card mb-4 animate-fade-in">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-sansTitle text-card mb-4 animate-fade-in">
               {title}
             </h1>
             {subtitle && (
