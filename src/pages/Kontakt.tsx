@@ -10,7 +10,7 @@ import {
   Instagram,
   Youtube,
 } from "lucide-react";
-import heroContact from "@/assets/hero-contact.jpg";
+import heroContact from "@/assets/hero-contact.png";
 
 const Kontakt = () => {
   return (
