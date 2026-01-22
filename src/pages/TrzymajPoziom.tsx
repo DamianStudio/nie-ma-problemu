@@ -13,22 +13,22 @@ import floor4 from "@/assets/floor-4.jpg";
 const doorSystems = [
   {
     title: "Podłogi 1",
-    description: "Opis do podłogi 1",
+    description: "Opis do Podłogi 1",
     image: floor1,
   },
   {
     title: "Podłogi 2",
-    description: "Opis do podłogi 2",
+    description: "Opis do Podłogi 2",
     image: floor2,
   },
   {
     title: "Podłogi 3",
-    description: "Opis do podłogi 3",
+    description: "Opis do Podłogi 3",
     image: floor3,
   },
   {
     title: "Podłogi 4",
-    description: "Opis do podłogi 4",
+    description: "Opis do Podłogi 4",
     image: floor4,
   },
 ];
