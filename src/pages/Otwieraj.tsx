@@ -65,6 +65,12 @@ const Otwieraj = () => {
               ukrytą ościeżnicą, które zapewniają minimalistyczny, elegancki
               efekt.
             </p>
+            <p className="text-muted-foreground leading-relaxed pt-6">
+              Innowacyjne systemy drzwiowe, w tym drzwi z ukrytą ościeżnicą, to
+              zdecydowanie nasz konik. Jednak nie na tym kończy się nasza oferta
+              drzwiowa. Posiadamy szeroki wachlarz drzwi wewnętrznych, zarówno
+              klasycznych, jak i nowoczesnych.
+            </p>
           </div>
         </div>
       </section>
@@ -86,7 +92,7 @@ const Otwieraj = () => {
                 <div className="image-overlay" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center px-4">
-                    <h3 className="text-2xl md:text-3xl font-serif font-semibold text-card mb-2">
+                    <h3 className="text-2xl md:text-3xl font-sansTitle font-semibold text-card mb-2">
                       {door.title}
                     </h3>
                     <p className="text-card/80 max-w-md mx-auto hidden md:block">
@@ -107,11 +113,11 @@ const Otwieraj = () => {
             <div>
               <SectionHeader title="Klamki nowoczesne i minimalistyczne" />
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Klamki dostajemy nie tylko w różnych wykończeniach, ale też
-                stylach – dla drzwi zewnętrznych, wewnętrznych szklanych i
-                klasycznych. Oferujemy pełne zestawy szyldem, okuciami,
-                powłokami od drzwi przesuwnych oraz stale-elegancje
-                podłączeniowe stylów nowoczesnych i minimalistycznych.
+                Klamki dobieramy nie tylko wizualnie, ale i technicznie – do
+                drzwi z ukrytą ościeżnicą, szklanych i klasycznych. Oferujemy
+                też pełne zestawy z rozetami, wkładkami, pochwyty do drzwi
+                przesuwnych oraz rozwiązania bezklamkowe (push-to-open) dla
+                wnętrz ultraminimalistycznych.
               </p>
               <Link
                 to="/kontakt"
@@ -140,7 +146,7 @@ const Otwieraj = () => {
       {/* CTA */}
       <section className="section-padding bg-primary">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-semibold text-primary-foreground mb-6">
+          <h2 className="text-3xl md:text-4xl font-sansTitle font-semibold text-primary-foreground mb-6">
             Porozmawiajmy o Twoim remoncie
           </h2>
           <Link

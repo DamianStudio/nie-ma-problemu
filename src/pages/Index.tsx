@@ -20,7 +20,7 @@ const Index = () => {
 
         <div className="relative z-10 container-custom px-4 md:px-8">
           <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-card mb-6 animate-fade-in">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-sansTitle text-card mb-6 animate-fade-in">
               Tworzymy piękne
               <br />i funkcjonalne wnętrza
             </h1>
@@ -58,7 +58,7 @@ const Index = () => {
             </div>
             <div className="grid grid-cols-3 gap-4 text-center">
               <div className="p-6">
-                <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">
+                <div className="text-4xl md:text-5xl font-sansTitle font-bold text-primary mb-2">
                   15+
                 </div>
                 <p className="text-muted-foreground text-sm">
@@ -66,7 +66,7 @@ const Index = () => {
                 </p>
               </div>
               <div className="p-6">
-                <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">
+                <div className="text-4xl md:text-5xl font-sansTitle font-bold text-primary mb-2">
                   500+
                 </div>
                 <p className="text-muted-foreground text-sm">
@@ -74,7 +74,7 @@ const Index = () => {
                 </p>
               </div>
               <div className="p-6">
-                <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">
+                <div className="text-4xl md:text-5xl font-sansTitle font-bold text-primary mb-2">
                   100%
                 </div>
                 <p className="text-muted-foreground text-sm">Satysfakcji</p>
@@ -100,7 +100,7 @@ const Index = () => {
               <span className="text-primary font-medium text-lg tracking-wider uppercase mb-2 block">
                 Otwieraj
               </span>
-              <h3 className="text-2xl md:text-3xl font-serif font-semibold text-foreground mb-4">
+              <h3 className="text-2xl md:text-3xl font-sansTitle font-semibold text-foreground mb-4">
                 Drzwi i klamki
               </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -131,7 +131,7 @@ const Index = () => {
               <span className="text-primary font-medium text-lg tracking-wider uppercase mb-2 block">
                 Dekoruj
               </span>
-              <h3 className="text-2xl md:text-3xl font-serif font-semibold text-foreground mb-4">
+              <h3 className="text-2xl md:text-3xl font-sansTitle font-semibold text-foreground mb-4">
                 Tapety, podłogi, sztukateria
               </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -162,7 +162,7 @@ const Index = () => {
               <span className="text-primary font-medium text-lg tracking-wider uppercase mb-2 block">
                 Trzymaj poziom
               </span>
-              <h3 className="text-2xl md:text-3xl font-serif font-semibold text-foreground mb-4">
+              <h3 className="text-2xl md:text-3xl font-sansTitle font-semibold text-foreground mb-4">
                 Dla wykonawców
               </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -187,12 +187,12 @@ const Index = () => {
         <div className="container-custom">
           <SectionHeader title="Dlaczego warto z nami pracować?" centered />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
             <div className="text-center p-8">
               <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
                 <Shield className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-serif font-semibold mb-4">
+              <h3 className="text-xl font-sansTitle font-semibold mb-4">
                 Kompleksowe wsparcie
               </h3>
               <p className="text-muted-foreground text-sm">
@@ -207,7 +207,7 @@ const Index = () => {
               <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
                 <Award className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-serif font-semibold mb-4">
+              <h3 className="text-xl font-sansTitle font-semibold mb-4">
                 Doświadczenie i elastyczność
               </h3>
               <p className="text-muted-foreground text-sm">
@@ -221,7 +221,7 @@ const Index = () => {
               <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
                 <Users className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-serif font-semibold mb-4">
+              <h3 className="text-xl font-sansTitle font-semibold mb-4">
                 Indywidualne podejście
               </h3>
               <p className="text-muted-foreground text-sm">
@@ -237,7 +237,7 @@ const Index = () => {
       {/* CTA Section */}
       <section className="section-padding bg-primary">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-semibold text-primary-foreground mb-6">
+          <h2 className="text-3xl md:text-4xl font-sansTitle font-semibold text-primary-foreground mb-6">
             Stwórzmy razem przestrzeń, o której marzysz!
           </h2>
           <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">

@@ -11,19 +11,22 @@ import realization3 from "@/assets/realization3.png";
 const realizations = [
   {
     title: "Artystyczna tapeta kwiatowa",
-    description: "Elegancka realizacja z wykorzystaniem fototapety z motywem kwiatów w odcieniach szarości i beżu. Idealne połączenie z nowoczesnymi drzwiami z ukrytą ościeżnicą.",
+    description:
+      "Elegancka realizacja z wykorzystaniem fototapety z motywem kwiatów w odcieniach szarości i beżu. Idealne połączenie z nowoczesnymi drzwiami z ukrytą ościeżnicą.",
     image: realization1,
     location: "Gdynia",
   },
   {
     title: "Minimalistyczne drzwi ukryte",
-    description: "Drzwi z ukrytą ościeżnicą pokryte tapetą strukturalną. Doskonałe wtopienie w ścianę dla maksymalnej elegancji.",
+    description:
+      "Drzwi z ukrytą ościeżnicą pokryte tapetą strukturalną. Doskonałe wtopienie w ścianę dla maksymalnej elegancji.",
     image: realization2,
     location: "Sopot",
   },
   {
     title: "Eleganckie przejście",
-    description: "Klasyczne drzwi z tapetą o subtelnej fakturze. Nowoczesny minimalizm w każdym detalu.",
+    description:
+      "Klasyczne drzwi z tapetą o subtelnej fakturze. Nowoczesny minimalizm w każdym detalu.",
     image: realization3,
     location: "Gdańsk",
   },
@@ -42,12 +45,11 @@ const Ogladaj = () => {
       <section className="section-padding bg-card">
         <div className="container-custom">
           <div className="max-w-3xl">
-            <SectionHeader
-              title="Nasze realizacje"
-            />
+            <SectionHeader title="Nasze realizacje" />
             <p className="text-muted-foreground leading-relaxed">
-              Każdy projekt to unikalna historia. Zobacz jak nasze rozwiązania 
-              zmieniają wnętrza naszych klientów w całym Trójmieście i okolicach.
+              Każdy projekt to unikalna historia. Zobacz jak nasze rozwiązania
+              zmieniają wnętrza naszych klientów w całym Trójmieście i
+              okolicach.
             </p>
           </div>
         </div>
@@ -68,7 +70,9 @@ const Ogladaj = () => {
                       src={item.image}
                       alt={item.title}
                       className={`w-full object-cover transition-transform duration-500 group-hover:scale-105 ${
-                        index === 0 ? "h-[400px] md:h-[600px]" : "h-[350px] md:h-[450px]"
+                        index === 0
+                          ? "h-[400px] md:h-[600px]"
+                          : "h-[350px] md:h-[450px]"
                       }`}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-transparent to-transparent" />
@@ -76,7 +80,7 @@ const Ogladaj = () => {
                       <span className="text-primary text-sm font-medium tracking-wider uppercase mb-2 block">
                         {item.location}
                       </span>
-                      <h3 className="text-xl md:text-2xl font-serif font-semibold text-card mb-2">
+                      <h3 className="text-xl md:text-2xl font-sansTitle font-semibold text-card mb-2">
                         {item.title}
                       </h3>
                       <p className="text-card/80 text-sm md:text-base max-w-xl">
@@ -92,33 +96,33 @@ const Ogladaj = () => {
       </section>
 
       {/* Stats */}
-      <section className="section-padding bg-card">
-        <div className="container-custom">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      {/* <section className="section-padding bg-card">
+        <div className="container-custom"> */}
+      {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">500+</div>
+              <div className="text-4xl md:text-5xl font-sansTitle font-bold text-primary mb-2">500+</div>
               <p className="text-muted-foreground">Zrealizowanych projektów</p>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">15+</div>
+              <div className="text-4xl md:text-5xl font-sansTitle font-bold text-primary mb-2">15+</div>
               <p className="text-muted-foreground">Lat doświadczenia</p>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">100%</div>
+              <div className="text-4xl md:text-5xl font-sansTitle font-bold text-primary mb-2">100%</div>
               <p className="text-muted-foreground">Zadowolonych klientów</p>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">4.9</div>
+              <div className="text-4xl md:text-5xl font-sansTitle font-bold text-primary mb-2">4.9</div>
               <p className="text-muted-foreground">Ocena Google</p>
             </div>
-          </div>
-        </div>
-      </section>
+          </div> */}
+      {/* </div>
+      </section> */}
 
       {/* CTA */}
       <section className="section-padding bg-primary">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-semibold text-primary-foreground mb-6">
+          <h2 className="text-3xl md:text-4xl font-sansTitle font-semibold text-primary-foreground mb-6">
             Chcesz zobaczyć więcej?
           </h2>
           <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">

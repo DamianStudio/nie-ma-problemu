@@ -46,13 +46,13 @@ const TrzymajPoziom = () => {
       <section className="section-padding bg-card">
         <div className="container-custom">
           <div className="max-w-3xl">
-            <SectionHeader title="Systemy drzwiowe – nowoczesne i praktyczne" />
+            <SectionHeader title="Tytuł do Trzymaj Poziom" />
             <p className="text-muted-foreground leading-relaxed">
-              Wybór drzwi to decyzja, która wpływa nie tylko na funkcjonalność,
-              ale i styl całego wnętrza. Oferujemy szeroką gamę drzwi
-              wewnętrznych – od klasycznych modeli po innowacyjne rozwiązania z
-              ukrytą ościeżnicą, które zapewniają minimalistyczny, elegancki
-              efekt.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
+              sapiente explicabo consequatur laborum amet esse quaerat magnam
+              blanditiis quod deserunt inventore eligendi deleniti obcaecati
+              quia cupiditate vero consequuntur praesentium quis eveniet,
+              perspiciatis officia nisi fugiat natus laudantium.
             </p>
           </div>
         </div>
@@ -75,7 +75,7 @@ const TrzymajPoziom = () => {
                 <div className="image-overlay" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center px-4">
-                    <h3 className="text-2xl md:text-3xl font-serif font-semibold text-card mb-2">
+                    <h3 className="text-2xl md:text-3xl font-sansTitle font-semibold text-card mb-2">
                       {system.title}
                     </h3>
                     <p className="text-card/80 max-w-md mx-auto hidden md:block">
@@ -124,7 +124,7 @@ const TrzymajPoziom = () => {
       {/* CTA */}
       <section className="section-padding bg-primary">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-semibold text-primary-foreground mb-6">
+          <h2 className="text-3xl md:text-4xl font-sansTitle font-semibold text-primary-foreground mb-6">
             Porozmawiajmy o Twoim remoncie
           </h2>
           <Link
