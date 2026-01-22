@@ -47,16 +47,13 @@ const Index = () => {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="section-title">Nie ma problemu!</h2>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Gwarantujemy perfekcyjne wykończenie wnętrz – kompleksowe usługi
-                z dbałością o każdy szczegół. Twój komfort jest naszym
-                priorytetem.
+              <p className="text-muted-foreground leading-relaxed  mb-4">
+                Masz wnętrze do wykończenia?
               </p>
+              <h2 className="section-title">Nie ma problemu!</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Specjalizujemy się w montażu drzwi, podłóg, tapet oraz
-                sztukaterii. Nasze wieloletnie doświadczenie gwarantuje
-                najwyższą jakość wykonania.
+                Doradzamy, dostarczamy i montujemy – kompleksowo i z dbałością o
+                każdy detal. Działamy mobilnie – dojeżdżamy na miejsce budowy.
               </p>
             </div>
             <div className="grid grid-cols-3 gap-4 text-center">
@@ -100,16 +97,16 @@ const Index = () => {
               />
             </div>
             <div>
-              <span className="text-primary font-medium text-sm tracking-wider uppercase mb-2 block">
+              <span className="text-primary font-medium text-lg tracking-wider uppercase mb-2 block">
                 Otwieraj
               </span>
               <h3 className="text-2xl md:text-3xl font-serif font-semibold text-foreground mb-4">
                 Drzwi i klamki
               </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Znakomite drzwi wewnętrzne i zewnętrzne w różnorodnych stylach –
-                od klasycznych modeli po nowoczesne rozwiązania z ukrytą
-                ościeżnicą.
+                Zobacz nowoczesne i klasyczne drzwi wewnętrzne, w tym systemy z
+                ukrytą ościeżnicą, drzwi szklane i efektowene rozwiązania
+                lustrzane. Dobierz stylowe klamki, które dopełnią całość.
               </p>
               <Link
                 to="/otwieraj"
@@ -131,16 +128,16 @@ const Index = () => {
               />
             </div>
             <div className="lg:order-1">
-              <span className="text-primary font-medium text-sm tracking-wider uppercase mb-2 block">
+              <span className="text-primary font-medium text-lg tracking-wider uppercase mb-2 block">
                 Dekoruj
               </span>
               <h3 className="text-2xl md:text-3xl font-serif font-semibold text-foreground mb-4">
                 Tapety, podłogi, sztukateria
               </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Wyjątkowe wzory tapet, eleganckie podłogi drewniane i stylowa
-                sztukateria – wszystko, czego potrzebujesz do stworzenia
-                wyjątkowego wnętrza.
+                Wzbogać wnętrze wyjątkowymi dekoracjami ściennymi i podłogowymi
+                – od designerskich tapet po wodoodporne płyty i sztukaterię o
+                wielu zastosowaniach.
               </p>
               <Link
                 to="/dekoruj"
@@ -162,15 +159,16 @@ const Index = () => {
               />
             </div>
             <div>
-              <span className="text-primary font-medium text-sm tracking-wider uppercase mb-2 block">
+              <span className="text-primary font-medium text-lg tracking-wider uppercase mb-2 block">
                 Trzymaj poziom
               </span>
               <h3 className="text-2xl md:text-3xl font-serif font-semibold text-foreground mb-4">
-                Dla wykończeniowców
+                Dla wykonawców
               </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Profesjonalne rozwiązania dla fachowców – systemy drzwiowe,
-                klamki i akcesoria montażowe najwyższej jakości.
+                Profesjonalne systemy poziomowania, narzędzia i materiały
+                ułatwiające prace remontowe. Sprawdzone rozwiązania dla
+                fachowców.
               </p>
               <Link
                 to="/trzymaj-poziom"
@@ -195,11 +193,13 @@ const Index = () => {
                 <Shield className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-serif font-semibold mb-4">
-                Kompleksowa obsługa
+                Kompleksowe wsparcie
               </h3>
-              <p className="text-muted-foreground">
-                Dostarczamy i montujemy – wszystko w jednym miejscu, bez
-                zbędnych formalności.
+              <p className="text-muted-foreground text-sm">
+                Doradzamy, dostarczamy i montujemy – bez przerzucania
+                odpowiedzialności. Jesteśmy z Tobą od pierwszego pomiaru aż po
+                montaż, szukając najlepszych rozwiązań na każdym etapie
+                realizacji.
               </p>
             </div>
 
@@ -208,11 +208,12 @@ const Index = () => {
                 <Award className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-serif font-semibold mb-4">
-                Znakomite materiały
+                Doświadczenie i elastyczność
               </h3>
-              <p className="text-muted-foreground">
-                Współpracujemy tylko z renomowanymi producentami, gwarantując
-                najwyższą jakość.
+              <p className="text-muted-foreground text-sm">
+                Od lat współpracujemy z profesjonalnymi wykonawcami i wiemy, jak
+                ważna jest komunikacja i szybka reakcja na zmiany. Znamy realia
+                budowy i potrafimy dostosować się do sytuacji.
               </p>
             </div>
 
@@ -223,9 +224,10 @@ const Index = () => {
               <h3 className="text-xl font-serif font-semibold mb-4">
                 Indywidualne podejście
               </h3>
-              <p className="text-muted-foreground">
-                Każdy projekt traktujemy indywidualnie, dbając o Twoje potrzeby
-                i oczekiwania.
+              <p className="text-muted-foreground text-sm">
+                Nie jesteśmy dużą siecią, dzięki czemu możemy zaopiekować się
+                każdym klientem. Masz bezpośredni kontakt z osobą odpowiedzialną
+                za projekt i pewność ze nikt nie zostawi Cię z problemem.
               </p>
             </div>
           </div>
@@ -236,7 +238,7 @@ const Index = () => {
       <section className="section-padding bg-primary">
         <div className="container-custom text-center">
           <h2 className="text-3xl md:text-4xl font-serif font-semibold text-primary-foreground mb-6">
-            Jesteś zadowolony z naszych usług?
+            Stwórzmy razem przestrzeń, o której marzysz!
           </h2>
           <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
             Skontaktuj się z nami i rozpocznij transformację swojego wnętrza już
