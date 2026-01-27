@@ -2,9 +2,9 @@ import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
 import SectionHeader from "@/components/SectionHeader";
 import {
-  MapPin,
-  Mail,
   Phone,
+  Mail,
+  MapPin,
   Clock,
   Facebook,
   Instagram,
@@ -19,21 +19,55 @@ const Kontakt = () => {
         title="Kontakt z nami"
         subtitle="Porozmawiajmy o Twoim projekcie"
         backgroundImage={heroContact}
+        isBacgkgroundForTextDark={true}
+        introTitle="Dane kontaktowe"
+        introOne="TODO Zachęcający opis sekcji KONTAKT lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       />
 
       {/* Contact Info Section */}
-      <section className="section-padding bg-card">
+      <section className="section-padding pt-0 bg-card">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* <div className="max-w-3xl mx-auto grid grid-cols-1 gap-12"> */}
             {/* Contact Details */}
             <div>
-              <SectionHeader title="Dane kontaktowe" />
-
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-primary" />
+                    <Mail className="w-6 h-6 text-accent" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">
+                      Email
+                    </h3>
+                    <a
+                      href="mailto:kontakt@niemaproblemu.com.pl"
+                      className="text-muted-foreground hover:underline"
+                    >
+                      kontakt@niemaproblemu.com.pl
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-accent" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">
+                      Telefon
+                    </h3>
+                    <a
+                      href="tel:+48505397950"
+                      className="text-muted-foreground"
+                    >
+                      +48 505 397 950
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-6 h-6 text-accent" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">
@@ -49,24 +83,7 @@ const Kontakt = () => {
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1">
-                      Email
-                    </h3>
-                    <a
-                      href="mailto:kontakt@niemaproblemu.com.pl"
-                      className="text-primary hover:underline"
-                    >
-                      kontakt@niemaproblemu.com.pl
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6 text-primary" />
+                    <Clock className="w-6 h-6 text-accent" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">
@@ -83,7 +100,7 @@ const Kontakt = () => {
 
               {/* Social Media */}
               <div className="mt-10">
-                <h3 className="font-semibold text-foreground mb-4">
+                <h3 className="font-semibold text-foreground mb-2">
                   Obserwuj nas
                 </h3>
                 <div className="flex gap-4">
@@ -118,27 +135,19 @@ const Kontakt = () => {
               </div>
             </div>
 
-            {/* <div className="container-custom"> */}
-            <div>
-              {/* <SectionHeader
-                title="Jak do nas trafić?"
-                subtitle="Znajdujemy się w centrum Gdyni, w dogodnej lokalizacji z łatwym dojazdem"
-                centered
-              /> */}
-
-              <div className="rounded-lg overflow-hidden shadow-xl">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2314.6751595261994!2d18.53881397684099!3d54.51838097265935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fda73817f73adf%3A0x57f7c8d93e3d5c7a!2sWolno%C5%9Bci%2016%2C%2081-327%20Gdynia!5e0!3m2!1spl!2spl!4v1706000000000!5m2!1spl!2spl"
-                  width="100%"
-                  height="450"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Lokalizacja Nie Ma Problemu - ul. Wolności 16, Gdynia"
-                  className="w-full"
-                />
-              </div>
+            {/* Map Section */}
+            <div className="rounded-lg overflow-hidden shadow-xl">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2314.6751595261994!2d18.53881397684099!3d54.51838097265935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fda73817f73adf%3A0x57f7c8d93e3d5c7a!2sWolno%C5%9Bci%2016%2C%2081-327%20Gdynia!5e0!3m2!1spl!2spl!4v1706000000000!5m2!1spl!2spl"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Lokalizacja Nie Ma Problemu - ul. Wolności 16, Gdynia"
+                className="w-full"
+              />
             </div>
 
             {/* Info Card */}

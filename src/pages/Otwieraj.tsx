@@ -7,40 +7,50 @@ import heroDoors from "@/assets/hero-doors.png";
 import doorsHidden from "@/assets/doors-hidden.jpg";
 import doorsClassic from "@/assets/doors-classic.jpg";
 import doorsSliding from "@/assets/doors-sliding.jpg";
-import doorsOutside from "@/assets/doors-outside.jpg";
 import doorsGlass from "@/assets/doors-glass.jpg";
 import doorsHandle from "@/assets/doors-handle.png";
+import BaseSection from "@/components/BaseSection";
 
 const doorTypes = [
   {
     title: "Drzwi z ukrytą ościeżnicą",
     description:
       "Minimalistyczny design z idealnie gładką powierzchnią ściany. Nowoczesne rozwiązanie dla wymagających.",
-    image: doorsHidden,
+    baseImage: doorsHidden,
+    altImage: "Drzwi z ukrytą ościeżnicą",
+    isImageLeft: true,
+    goToSectionName: "Zobacz galerię",
+    goToSectionURL: "/otwieraj", //TODO: update URL
   },
   {
     title: "Drzwi przesuwne",
     description:
       "Oszczędność miejsca i elegancki wygląd. Idealne do małych pomieszczeń i nowoczesnych aranżacji.",
-    image: doorsSliding,
+    baseImage: doorsSliding,
+    altImage: "Drzwi przesuwne",
+    isImageLeft: false,
+    goToSectionName: "Zobacz galerię",
+    goToSectionURL: "/otwieraj", //TODO: update URL
   },
   {
     title: "Drzwi klasyczne",
     description:
       "Ponadczasowy styl z tradycyjną ościeżnicą. Doskonałe do klasycznych i eleganckich wnętrz.",
-    image: doorsClassic,
-  },
-  {
-    title: "Drzwi zewnętrzne",
-    description:
-      "Bezpieczeństwo i izolacja termiczna. Stylowe wejście do Twojego domu.",
-    image: doorsOutside,
+    baseImage: doorsClassic,
+    altImage: "Drzwi klasyczne",
+    isImageLeft: true,
+    goToSectionName: "Zobacz galerię",
+    goToSectionURL: "/otwieraj", //TODO: update URL
   },
   {
     title: "Rozwiązania szklane",
     description:
       "Przeszklenia i drzwi szklane, które dodają przestrzeni i światła każdemu wnętrzu.",
-    image: doorsGlass,
+    baseImage: doorsGlass,
+    altImage: "Drzwi szklane",
+    isImageLeft: false,
+    goToSectionName: "Zobacz galerię",
+    goToSectionURL: "/otwieraj", //TODO: update URL
   },
 ];
 
@@ -51,95 +61,54 @@ const Otwieraj = () => {
         title="Otwieraj"
         subtitle="Drzwi i klamki, które otwierają Twoje wnętrze na nowy styl"
         backgroundImage={heroDoors}
-      />
-
-      {/* Intro Section */}
-      <section className="section-padding bg-card">
-        <div className="container-custom">
-          <div className="max-w-3xl">
-            <SectionHeader title="Systemy drzwiowe – nowoczesne i praktyczne" />
-            <p className="text-muted-foreground leading-relaxed">
-              Wybór drzwi to decyzja, która wpływa nie tylko na funkcjonalność,
+        isBacgkgroundForTextDark={true}
+        introTitle="Systemy drzwiowe – nowoczesne i praktyczne"
+        introOne="Wybór drzwi to decyzja, która wpływa nie tylko na funkcjonalność,
               ale i styl całego wnętrza. Oferujemy szeroką gamę drzwi
               wewnętrznych – od klasycznych modeli po innowacyjne rozwiązania z
               ukrytą ościeżnicą, które zapewniają minimalistyczny, elegancki
-              efekt.
-            </p>
-            <p className="text-muted-foreground leading-relaxed pt-6">
-              Innowacyjne systemy drzwiowe, w tym drzwi z ukrytą ościeżnicą, to
+              efekt."
+        introTwo="Innowacyjne systemy drzwiowe, w tym drzwi z ukrytą ościeżnicą, to
               zdecydowanie nasz konik. Jednak nie na tym kończy się nasza oferta
               drzwiowa. Posiadamy szeroki wachlarz drzwi wewnętrznych, zarówno
-              klasycznych, jak i nowoczesnych.
-            </p>
-          </div>
-        </div>
-      </section>
+              klasycznych, jak i nowoczesnych."
+      />
 
       {/* Door Types Gallery */}
       <section className="section-padding bg-section-alt">
         <div className="container-custom">
-          <div className="space-y-8">
-            {doorTypes.map((door, index) => (
-              <div
-                key={index}
-                className="relative overflow-hidden rounded-lg shadow-xl h-[300px] md:h-[400px] group"
-              >
-                <img
-                  src={door.image}
-                  alt={door.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="image-overlay" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center px-4">
-                    <h3 className="text-2xl md:text-3xl font-sansTitle font-semibold text-card mb-2">
-                      {door.title}
-                    </h3>
-                    <p className="text-card/80 max-w-md mx-auto hidden md:block">
-                      {door.description}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+          {doorTypes.map((section, index) => (
+            <BaseSection
+              key={index}
+              baseImage={section.baseImage}
+              altImage={section.altImage}
+              isImageLeft={section.isImageLeft}
+              title={section.title}
+              description={section.description}
+              goToSectionName={section.goToSectionName}
+              goToSectionURL={section.goToSectionURL}
+            />
+          ))}
         </div>
       </section>
 
       {/* Handles Section */}
       <section className="section-padding bg-card">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <SectionHeader title="Klamki nowoczesne i minimalistyczne" />
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Klamki dobieramy nie tylko wizualnie, ale i technicznie – do
+          <BaseSection
+            baseImage={doorsHandle}
+            altImage="klamka"
+            isImageLeft={false}
+            title="Klamki nowoczesne i minimalistyczn"
+            description="Klamki dobieramy nie tylko wizualnie, ale i technicznie – do
                 drzwi z ukrytą ościeżnicą, szklanych i klasycznych. Oferujemy
                 też pełne zestawy z rozetami, wkładkami, pochwyty do drzwi
                 przesuwnych oraz rozwiązania bezklamkowe (push-to-open) dla
-                wnętrz ultraminimalistycznych.
-              </p>
-              <Link
-                to="/kontakt"
-                className="inline-flex items-center gap-2 btn-primary"
-              >
-                Zobacz galerię klamek
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-            </div>
-            <div className="bg-muted rounded-lg h-[300px] md:h-[400px] flex items-center justify-center">
-              <img
-                src={doorsHandle}
-                alt="Klamki"
-                className="w-full h-full object-cover rounded-lg"
-              />
-              {/* <div className="text-center p-8">
-                <p className="text-muted-foreground italic">
-                  Galeria klamek i akcesoriów
-                </p>
-              </div> */}
-            </div>
-          </div>
+                wnętrz ultraminimalistycznych."
+            goToSectionName="Zobacz galerię klamek"
+            goToSectionURL="/otwieraj" //TODO: update URL
+            goToSectionBg
+          />
         </div>
       </section>
 

@@ -6,9 +6,9 @@ import logo from "@/assets/logo.png";
 const navLinks = [
   { path: "/", label: "Strona główna" },
   { path: "/otwieraj", label: "Otwieraj" },
-  { path: "/trzymaj-poziom", label: "Trzymaj poziom" },
   { path: "/dekoruj", label: "Dekoruj" },
   { path: "/ogladaj", label: "Oglądaj" },
+  { path: "/trzymaj-poziom", label: "Trzymaj poziom" },
   { path: "/kontakt", label: "Kontakt" },
 ];
 
