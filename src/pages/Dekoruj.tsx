@@ -7,25 +7,38 @@ import heroDecoration from "@/assets/hero-decoration.png";
 import decoration1 from "@/assets/decorate-1.png";
 import decoration2 from "@/assets/decorate-2.png";
 import decoration3 from "@/assets/decorate-3.png";
+import BaseSection from "@/components/BaseSection";
 
 const decorations = [
   {
     title: "Elegancka jadalnia",
     description:
       "Artystyczna tapeta z motywem drzew i naturalnych form. Idealne tło dla nowoczesnej jadalni z drewnianymi akcentami.",
-    image: decoration1,
+    baseImage: decoration1,
+    altImage: "alt", //TODO: add alt text
+    isImageLeft: true,
+    goToSectionName: "Zobacz galerię",
+    goToSectionURL: "/dekoruj", //TODO: update URL
   },
   {
     title: "Sypialnia w stylu botanicznym",
     description:
       "Romantyczna tapeta z motywami roślinnymi i ptakami. Tworzy przytulną i relaksującą atmosferę w sypialni.",
-    image: decoration2,
+    baseImage: decoration2,
+    altImage: "alt", //TODO: add alt text
+    isImageLeft: false,
+    goToSectionName: "Zobacz galerię",
+    goToSectionURL: "/dekoruj", //TODO: update URL
   },
   {
     title: "Salon z akcentem złota",
     description:
       "Subtelna tapeta z delikatnymi gałązkami i złotymi akcentami. Dodaje elegancji i ciepła każdemu salonowi.",
-    image: decoration3,
+    baseImage: decoration3,
+    altImage: "alt", //TODO: add alt text
+    isImageLeft: true,
+    goToSectionName: "Zobacz galerię",
+    goToSectionURL: "/dekoruj", //TODO: update URL
   },
 ];
 
@@ -36,51 +49,28 @@ const Dekoruj = () => {
         title="Dekoruj"
         subtitle="Tapety, podłogi i sztukateria, które odmienią Twoje wnętrze"
         backgroundImage={heroDecoration}
-      />
-
-      {/* Intro Section */}
-      <section className="section-padding bg-card">
-        <div className="container-custom">
-          <div className="max-w-3xl">
-            <SectionHeader title="Wyjątkowe dekoracje ścienne" />
-            <p className="text-muted-foreground leading-relaxed">
-              Odkryj nasze kolekcje tapet, podłóg i sztukaterii, które nadadzą
+        isBacgkgroundForTextDark={true}
+        introTitle="Wyjątkowe dekoracje ścienne"
+        introOne="Odkryj nasze kolekcje tapet, podłóg i sztukaterii, które nadadzą
               Twoim wnętrzom wyjątkowy charakter. Każdy projekt realizujemy z
-              najwyższą dbałością o detale i profesjonalny montaż.
-            </p>
-          </div>
-        </div>
-      </section>
+              najwyższą dbałością o detale i profesjonalny montaż."
+      />
 
       {/* Gallery Section */}
       <section className="section-padding bg-section-alt">
         <div className="container-custom">
-          <SectionHeader
-            title="Nasze inspiracje"
-            subtitle="Zobacz jak nasze realizacje odmienią Twoje wnętrza"
-            centered
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {decorations.map((item, index) => (
-              <div key={index} className="gallery-item group">
-                <div className="relative overflow-hidden">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                    <h3 className="text-xl font-sansTitle font-semibold text-card mb-2">
-                      {item.title}
-                    </h3>
-                    <p className="text-card/80 text-sm">{item.description}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+          {decorations.map((section, index) => (
+            <BaseSection
+              key={index}
+              baseImage={section.baseImage}
+              altImage={section.altImage}
+              isImageLeft={section.isImageLeft}
+              title={section.title}
+              description={section.description}
+              goToSectionName={section.goToSectionName}
+              goToSectionURL={section.goToSectionURL}
+            />
+          ))}
         </div>
       </section>
 

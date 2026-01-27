@@ -5,180 +5,90 @@ import { ArrowRight, Shield, Award, Users } from "lucide-react";
 import heroHome from "@/assets/hero-home.png";
 import heroDoors from "@/assets/hero-doors.png";
 import heroDecoration from "@/assets/hero-decoration.png";
+import heroRealizations from "@/assets/hero-realizations.jpg";
 import heroFloors from "@/assets/hero-floors.jpg";
+import BaseSection from "@/components/BaseSection";
+import PageHero from "@/components/PageHero";
+
+const sectionData = [
+  {
+    baseImage: heroDoors,
+    altImage: "Drzwi i klamki",
+    isImageLeft: true,
+    surtitle: "Otwieraj",
+    title: "Drzwi i klamki",
+    description:
+      "Zobacz nowoczesne i klasyczne drzwi wewnętrzne, w tym systemy z ukrytą ościeżnicą, drzwi szklane i efektowene rozwiązania lustrzane. Dobierz stylowe klamki, które dopełnią całość.",
+    goToSectionName: "Sprawdź ofertę",
+    goToSectionURL: "/otwieraj",
+  },
+  {
+    baseImage: heroDecoration,
+    altImage: "Tapety i dekoracje",
+    isImageLeft: false,
+    surtitle: "Dekoruj",
+    title: "Tapety, podłogi, sztukateria",
+    description:
+      "Zobacz nowoczesne i klasyczne drzwi wewnętrzne, w tym systemy z ukrytą ościeżnicą, drzwi szklane i efektowene rozwiązania lustrzane. Dobierz stylowe klamki, które dopełnią całość.",
+    goToSectionName: "Sprawdź ofertę",
+    goToSectionURL: "/dekoruj",
+  },
+  {
+    baseImage: heroRealizations,
+    altImage: "przykładowa realizacja",
+    isImageLeft: true,
+    surtitle: "Oglądaj",
+    title: "Nasze realizacje",
+    description:
+      "Przekonaj się, jak wybrane przez nas drzwi, podłogi i detale wykończeniowe prezentują się w rzeczywistych wnętrzach. Odkryj różnorodność stylów – od nowoczesnego minimalizmu po klasyczną elegancję – i zobacz jakość naszych montaży w praktyce.",
+    goToSectionName: "Zobacz galerię",
+    goToSectionURL: "/ogladaj",
+  },
+  {
+    baseImage: heroFloors,
+    altImage: "Podłogi",
+    isImageLeft: false,
+    surtitle: "Trzymaj poziom",
+    title: "Dla wykonawców",
+    description:
+      "Profesjonalne systemy poziomowania, narzędzia i materiały ułatwiające prace remontowe. Sprawdzone rozwiązania dla fachowców.",
+    goToSectionName: "Sprawdź",
+    goToSectionURL: "/trzymaj-poziom",
+  },
+];
 
 const Index = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative h-[80vh] min-h-[600px] flex items-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroHome})` }}
-        />
-        <div className="hero-overlay absolute inset-0" />
-
-        <div className="relative z-10 container-custom px-4 md:px-8">
-          <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-sansTitle text-card mb-6 animate-fade-in">
-              Tworzymy piękne
-              <br />i funkcjonalne wnętrza
-            </h1>
-            <p
-              className="text-lg md:text-xl text-card mb-8 animate-fade-in"
-              style={{ animationDelay: "0.2s" }}
-            >
-              Drzwi, podłogi, tapety i sztukateria z montażem
-            </p>
-            <Link
-              to="/kontakt"
-              className="btn-primary inline-flex items-center gap-2 animate-fade-in"
-              style={{ animationDelay: "0.4s" }}
-            >
-              Skontaktuj się
-              <ArrowRight className="w-5 h-5" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section className="section-padding bg-card">
-        <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-muted-foreground leading-relaxed  mb-4">
-                Masz wnętrze do wykończenia?
-              </p>
-              <h2 className="section-title">Nie ma problemu!</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                Doradzamy, dostarczamy i montujemy – kompleksowo i z dbałością o
-                każdy detal. Działamy mobilnie – dojeżdżamy na miejsce budowy.
-              </p>
-            </div>
-            <div className="grid grid-cols-3 gap-4 text-center pr-2">
-              <div className="p-1">
-                <div className="text-4xl md:text-5xl font-sansTitle font-bold text-primary mb-2">
-                  15+
-                </div>
-                <p className="text-muted-foreground text-sm">
-                  Lat doświadczenia
-                </p>
-              </div>
-              <div className="p-1">
-                <div className="text-4xl md:text-5xl font-sansTitle font-bold text-primary mb-2">
-                  500+
-                </div>
-                <p className="text-muted-foreground text-sm">
-                  Zadowolonych klientów
-                </p>
-              </div>
-              <div className="p-1">
-                <div className="text-4xl md:text-5xl font-sansTitle font-bold text-primary mb-2">
-                  100%
-                </div>
-                <p className="text-muted-foreground text-sm">Satysfakcji</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        title={`Tworzymy piękne \n i funkcjonalne wnętrza`}
+        subtitle="Drzwi, podłogi, tapety i sztukateria z montażem"
+        backgroundImage={heroHome}
+        ctaButtonText="Skontaktuj się"
+        ctaLinkURL="/kontakt"
+        introSurtitle="Masz wnętrze do wykończenia?"
+        introTitle="Nie ma problemu!"
+        introOne="Doradzamy, dostarczamy i montujemy – kompleksowo i z dbałością o
+              każdy detal. Działamy mobilnie – dojeżdżamy na miejsce budowy."
+      />
 
       {/* Services Preview */}
       <section className="section-padding bg-section-alt">
         <div className="container-custom">
-          {/* Service 1 - Otwieraj */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-20">
-            <div className="overflow-hidden rounded-lg shadow-xl">
-              <img
-                src={heroDoors}
-                alt="Drzwi i klamki"
-                className="w-full h-[300px] md:h-[400px] object-cover transition-transform duration-500 hover:scale-105"
-              />
-            </div>
-            <div>
-              <span className="text-primary font-medium text-lg tracking-wider uppercase mb-2 block">
-                Otwieraj
-              </span>
-              <h3 className="text-2xl md:text-3xl font-sansTitle font-semibold text-foreground mb-4">
-                Drzwi i klamki
-              </h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Zobacz nowoczesne i klasyczne drzwi wewnętrzne, w tym systemy z
-                ukrytą ościeżnicą, drzwi szklane i efektowene rozwiązania
-                lustrzane. Dobierz stylowe klamki, które dopełnią całość.
-              </p>
-              <Link
-                to="/otwieraj"
-                className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all duration-200"
-              >
-                Sprawdź ofertę
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-            </div>
-          </div>
-
-          {/* Service 2 - Dekoruj */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-20">
-            <div className="lg:order-2 overflow-hidden rounded-lg shadow-xl">
-              <img
-                src={heroDecoration}
-                alt="Tapety i dekoracje"
-                className="w-full h-[300px] md:h-[400px] object-cover transition-transform duration-500 hover:scale-105"
-              />
-            </div>
-            <div className="lg:order-1">
-              <span className="text-primary font-medium text-lg tracking-wider uppercase mb-2 block">
-                Dekoruj
-              </span>
-              <h3 className="text-2xl md:text-3xl font-sansTitle font-semibold text-foreground mb-4">
-                Tapety, podłogi, sztukateria
-              </h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Wzbogać wnętrze wyjątkowymi dekoracjami ściennymi i podłogowymi
-                – od designerskich tapet po wodoodporne płyty i sztukaterię o
-                wielu zastosowaniach.
-              </p>
-              <Link
-                to="/dekoruj"
-                className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all duration-200"
-              >
-                Sprawdź ofertę
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-            </div>
-          </div>
-
-          {/* Service 3 - Trzymaj poziom */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div className="overflow-hidden rounded-lg shadow-xl">
-              <img
-                src={heroFloors}
-                alt="Podłogi"
-                className="w-full h-[300px] md:h-[400px] object-cover transition-transform duration-500 hover:scale-105"
-              />
-            </div>
-            <div>
-              <span className="text-primary font-medium text-lg tracking-wider uppercase mb-2 block">
-                Trzymaj poziom
-              </span>
-              <h3 className="text-2xl md:text-3xl font-sansTitle font-semibold text-foreground mb-4">
-                Dla wykonawców
-              </h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Profesjonalne systemy poziomowania, narzędzia i materiały
-                ułatwiające prace remontowe. Sprawdzone rozwiązania dla
-                fachowców.
-              </p>
-              <Link
-                to="/trzymaj-poziom"
-                className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all duration-200"
-              >
-                Sprawdź ofertę
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-            </div>
-          </div>
+          {sectionData.map((section, index) => (
+            <BaseSection
+              key={index}
+              baseImage={section.baseImage}
+              altImage={section.altImage}
+              isImageLeft={section.isImageLeft}
+              surtitle={section.surtitle}
+              title={section.title}
+              description={section.description}
+              goToSectionName={section.goToSectionName}
+              goToSectionURL={section.goToSectionURL}
+            />
+          ))}
         </div>
       </section>
 
@@ -190,7 +100,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
             <div className="text-center p-8">
               <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                <Shield className="w-8 h-8 text-primary" />
+                <Shield className="w-8 h-8 text-accent" />
               </div>
               <h3 className="text-xl font-sansTitle font-semibold mb-4">
                 Kompleksowe wsparcie
@@ -205,7 +115,7 @@ const Index = () => {
 
             <div className="text-center p-8">
               <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                <Award className="w-8 h-8 text-primary" />
+                <Award className="w-8 h-8 text-accent" />
               </div>
               <h3 className="text-xl font-sansTitle font-semibold mb-4">
                 Doświadczenie i elastyczność
@@ -219,7 +129,7 @@ const Index = () => {
 
             <div className="text-center p-8">
               <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                <Users className="w-8 h-8 text-primary" />
+                <Users className="w-8 h-8 text-accent" />
               </div>
               <h3 className="text-xl font-sansTitle font-semibold mb-4">
                 Indywidualne podejście

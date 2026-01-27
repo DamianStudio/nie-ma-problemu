@@ -9,27 +9,44 @@ import floor1 from "@/assets/floor-1.jpg";
 import floor2 from "@/assets/floor-2.jpg";
 import floor3 from "@/assets/floor-3.jpg";
 import floor4 from "@/assets/floor-4.jpg";
+import BaseSection from "@/components/BaseSection";
 
-const doorSystems = [
+const keepStandards = [
   {
-    title: "Podłogi 1",
-    description: "Opis do Podłogi 1",
-    image: floor1,
+    title: "Trzymaj poziom 1",
+    description: "Opis do Trzymaj poziom 1",
+    baseImage: floor1,
+    altImage: "alt", //TODO: add alt text
+    isImageLeft: true,
+    goToSectionName: "Zobacz galerię",
+    goToSectionURL: "/trzymaj-poziom", //TODO: update URL
   },
   {
-    title: "Podłogi 2",
-    description: "Opis do Podłogi 2",
-    image: floor2,
+    title: "Trzymaj poziom 2",
+    description: "Opis do Trzymaj poziom 2",
+    baseImage: floor2,
+    altImage: "alt", //TODO: add alt text
+    isImageLeft: false,
+    goToSectionName: "Zobacz galerię",
+    goToSectionURL: "/trzymaj-poziom", //TODO: update URL
   },
   {
-    title: "Podłogi 3",
-    description: "Opis do Podłogi 3",
-    image: floor3,
+    title: "Trzymaj poziom 3",
+    description: "Opis do Trzymaj poziom 3",
+    baseImage: floor3,
+    altImage: "alt", //TODO: add alt text
+    isImageLeft: true,
+    goToSectionName: "Zobacz galerię",
+    goToSectionURL: "/trzymaj-poziom", //TODO: update URL
   },
   {
-    title: "Podłogi 4",
-    description: "Opis do Podłogi 4",
-    image: floor4,
+    title: "Trzymaj poziom 4",
+    description: "Opis do Trzymaj poziom 4",
+    baseImage: floor4,
+    altImage: "alt", //TODO: add alt text
+    isImageLeft: false,
+    goToSectionName: "Zobacz galerię",
+    goToSectionURL: "/trzymaj-poziom", //TODO: update URL
   },
 ];
 
@@ -40,84 +57,30 @@ const TrzymajPoziom = () => {
         title="Trzymaj poziom"
         subtitle="Sprawdzone rozwiązania dla fachowców"
         backgroundImage={heroFloors}
-      />
-
-      {/* Intro Section */}
-      <section className="section-padding bg-card">
-        <div className="container-custom">
-          <div className="max-w-3xl">
-            <SectionHeader title="Tytuł do Trzymaj Poziom" />
-            <p className="text-muted-foreground leading-relaxed">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
+        isBacgkgroundForTextDark={true}
+        introTitle="Tytuł do Trzymaj Poziom"
+        introOne="TODO Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
               sapiente explicabo consequatur laborum amet esse quaerat magnam
               blanditiis quod deserunt inventore eligendi deleniti obcaecati
               quia cupiditate vero consequuntur praesentium quis eveniet,
-              perspiciatis officia nisi fugiat natus laudantium.
-            </p>
-          </div>
-        </div>
-      </section>
+              perspiciatis officia nisi fugiat natus laudantium."
+      />
 
       {/* Door Systems Gallery */}
       <section className="section-padding bg-section-alt">
         <div className="container-custom">
-          <div className="space-y-8">
-            {doorSystems.map((system, index) => (
-              <div
-                key={index}
-                className="relative overflow-hidden rounded-lg shadow-xl h-[300px] md:h-[400px] group"
-              >
-                <img
-                  src={system.image}
-                  alt={system.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="image-overlay" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center px-4">
-                    <h3 className="text-2xl md:text-3xl font-sansTitle font-semibold text-card mb-2">
-                      {system.title}
-                    </h3>
-                    <p className="text-card/80 max-w-md mx-auto hidden md:block">
-                      {system.description}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Handles Section */}
-      <section className="section-padding bg-card">
-        <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <SectionHeader title="Dodatkowy opis lub informacje dla zakładki" />
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
-                hic iste quisquam, ut incidunt tenetur nesciunt facilis itaque
-                maiores odio ullam aspernatur numquam ducimus, aut perspiciatis
-                ad quas a suscipit modi sint possimus. Esse provident fugiat
-                deleniti harum. Voluptate omnis atque natus aliquid illum ipsum?
-              </p>
-              <Link
-                to="/kontakt"
-                className="inline-flex items-center gap-2 btn-primary"
-              >
-                CTA Button
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-            </div>
-            <div className="bg-muted rounded-lg overflow-hidden h-[300px] md:h-[400px]">
-              <img
-                src={heroDoors}
-                alt="Klamki"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
+          {keepStandards.map((section, index) => (
+            <BaseSection
+              key={index}
+              baseImage={section.baseImage}
+              altImage={section.altImage}
+              isImageLeft={section.isImageLeft}
+              title={section.title}
+              description={section.description}
+              goToSectionName={section.goToSectionName}
+              goToSectionURL={section.goToSectionURL}
+            />
+          ))}
         </div>
       </section>
 

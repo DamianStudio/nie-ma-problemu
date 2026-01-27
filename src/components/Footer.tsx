@@ -1,5 +1,12 @@
 import { Link } from "react-router-dom";
-import { MapPin, Mail, Facebook, Instagram, Youtube } from "lucide-react";
+import {
+  Phone,
+  Mail,
+  Facebook,
+  Instagram,
+  Youtube,
+  // MapPin
+} from "lucide-react";
 
 const Footer = () => {
   return (
@@ -21,21 +28,30 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Kontakt</h4>
             <div className="space-y-3">
-              <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-footer-foreground/80">
-                  ul. Wolności 16, Gdynia
-                </span>
-              </div>
               <div className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-primary flex-shrink-0" />
+                <Mail className="w-5 h-5 text-accent flex-shrink-0" />
                 <a
                   href="mailto:kontakt@niemaproblemu.com.pl"
-                  className="text-footer-foreground/80 hover:text-primary transition-colors"
+                  className="text-footer-foreground/80 hover:text-accent transition-colors"
                 >
                   kontakt@niemaproblemu.com.pl
                 </a>
               </div>
+              <div className="flex items-center gap-3">
+                <Phone className="w-5 h-5 text-accent flex-shrink-0" />
+                <a
+                  href="tel:+48505397950"
+                  className="text-footer-foreground/80 hover:text-accent transition-colors"
+                >
+                  +48 505 397 950
+                </a>
+              </div>
+              {/* <div className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                <span className="text-footer-foreground/80">
+                  ul. Wolności 16, Gdynia
+                </span>
+              </div> */}
             </div>
           </div>
 
@@ -47,7 +63,7 @@ const Footer = () => {
                 href="https://facebook.com/niemaproblemugdynia"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-footer-foreground/10 flex items-center justify-center hover:bg-primary transition-colors"
+                className="w-10 h-10 rounded-full bg-footer-foreground/10 flex items-center justify-center hover:bg-accent hover:text-footer transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
@@ -56,7 +72,7 @@ const Footer = () => {
                 href="https://instagram.com/niemaproblemugdynia"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-footer-foreground/10 flex items-center justify-center hover:bg-primary transition-colors"
+                className="w-10 h-10 rounded-full bg-footer-foreground/10 flex items-center justify-center hover:bg-accent hover:text-footer transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
@@ -65,7 +81,7 @@ const Footer = () => {
                 href="https://youtube.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-footer-foreground/10 flex items-center justify-center hover:bg-primary transition-colors"
+                className="w-10 h-10 rounded-full bg-footer-foreground/10 flex items-center justify-center hover:bg-accent hover:text-footer transition-colors"
                 aria-label="Youtube"
               >
                 <Youtube className="w-5 h-5" />
