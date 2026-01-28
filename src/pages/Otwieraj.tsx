@@ -20,7 +20,8 @@ const doorTypes = [
     altImage: "Drzwi z ukrytą ościeżnicą",
     isImageLeft: true,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/otwieraj/galeria",
+    goToSectionURL:
+      "/galeria-zdjęć?page=otwieraj&title=drzwi-z-ukryta-oscieznica",
   },
   {
     title: "Drzwi przesuwne",
@@ -30,7 +31,7 @@ const doorTypes = [
     altImage: "Drzwi przesuwne",
     isImageLeft: false,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/otwieraj/galeria",
+    goToSectionURL: "/galeria-zdjęć?page=otwieraj&title=drzwi-przesuwne",
   },
   {
     title: "Drzwi klasyczne",
@@ -40,7 +41,7 @@ const doorTypes = [
     altImage: "Drzwi klasyczne",
     isImageLeft: true,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/otwieraj/galeria",
+    goToSectionURL: "/galeria-zdjęć?page=otwieraj&title=drzwi-klasyczne",
   },
   {
     title: "Rozwiązania szklane",
@@ -50,7 +51,7 @@ const doorTypes = [
     altImage: "Drzwi szklane",
     isImageLeft: false,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/otwieraj/galeria",
+    goToSectionURL: "/galeria-zdjęć?page=otwieraj&title=drzwi-szklane",
   },
 ];
 
@@ -99,14 +100,14 @@ const Otwieraj = () => {
             baseImage={doorsHandle}
             altImage="klamka"
             isImageLeft={false}
-            title="Klamki nowoczesne i minimalistyczn"
+            title="Klamki nowoczesne i minimalistyczne"
             description="Klamki dobieramy nie tylko wizualnie, ale i technicznie – do
                 drzwi z ukrytą ościeżnicą, szklanych i klasycznych. Oferujemy
                 też pełne zestawy z rozetami, wkładkami, pochwyty do drzwi
                 przesuwnych oraz rozwiązania bezklamkowe (push-to-open) dla
                 wnętrz ultraminimalistycznych."
             goToSectionName="Zobacz galerię klamek"
-            goToSectionURL="/otwieraj/galeria"
+            goToSectionURL="/galeria-zdjęć?page=otwieraj&title=klamki-nowoczesne-i-minimalistyczne"
             goToSectionBg
           />
         </div>
