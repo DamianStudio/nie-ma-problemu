@@ -19,7 +19,7 @@ const realizations = [
     altImage: "alt", //TODO: add alt text
     isImageLeft: true,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/galeria-zdjec?page=oglądaj&section=section1", //TODO: update URL
+    goToSectionURL: "/galeria-zdjec?page=ogladaj&section=section1", //TODO: update URL
   },
 
   {
@@ -31,7 +31,7 @@ const realizations = [
     altImage: "alt", //TODO: add alt text
     isImageLeft: false,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/galeria-zdjec?page=oglądaj&section=section2", //TODO: update URL
+    goToSectionURL: "/galeria-zdjec?page=ogladaj&section=section2", //TODO: update URL
   },
   {
     surtitle: "Gdańsk",
@@ -42,7 +42,7 @@ const realizations = [
     altImage: "alt", //TODO: add alt text
     isImageLeft: true,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/galeria-zdjec?page=oglądaj&section=section3", //TODO: update URL
+    goToSectionURL: "/galeria-zdjec?page=ogladaj&section=section3", //TODO: update URL
   },
 ];
 
