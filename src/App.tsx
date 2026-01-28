@@ -27,7 +27,7 @@ const App = () => (
           <Route path="/dekoruj" element={<Dekoruj />} />
           <Route path="/ogladaj" element={<Ogladaj />} />
           <Route path="/kontakt" element={<Kontakt />} />
-          {/* <Route path="/galeria-zdjec" element={<GaleriaZdjec />} /> */}
+          <Route path="/galeria-zdjec" element={<GaleriaZdjec />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </HashRouter>
