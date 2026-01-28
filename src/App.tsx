@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Otwieraj from "./pages/Otwieraj";
+import OtwierajGaleria from "./pages/OtwierajGaleria";
 import TrzymajPoziom from "./pages/TrzymajPoziom";
 import Dekoruj from "./pages/Dekoruj";
 import Ogladaj from "./pages/Ogladaj";
@@ -22,6 +23,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/otwieraj" element={<Otwieraj />} />
+          <Route path="/otwieraj/galeria" element={<OtwierajGaleria />} />
           <Route path="/trzymaj-poziom" element={<TrzymajPoziom />} />
           <Route path="/dekoruj" element={<Dekoruj />} />
           <Route path="/ogladaj" element={<Ogladaj />} />
