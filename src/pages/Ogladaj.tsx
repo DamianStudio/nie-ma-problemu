@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
-import SectionHeader from "@/components/SectionHeader";
 import { ArrowRight } from "lucide-react";
 import heroRealizations from "@/assets/hero-realizations.jpg";
 import realization1 from "@/assets/realization1.png";
@@ -20,8 +19,9 @@ const realizations = [
     altImage: "alt", //TODO: add alt text
     isImageLeft: true,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/oglądaj", //TODO: update URL
+    goToSectionURL: "/galeria-zdjec?page=oglądaj&section=section1", //TODO: update URL
   },
+
   {
     surtitle: "Sopot",
     title: "Minimalistyczne drzwi ukryte",
@@ -31,7 +31,7 @@ const realizations = [
     altImage: "alt", //TODO: add alt text
     isImageLeft: false,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/oglądaj", //TODO: update URL
+    goToSectionURL: "/galeria-zdjec?page=oglądaj&section=section2", //TODO: update URL
   },
   {
     surtitle: "Gdańsk",
@@ -42,7 +42,7 @@ const realizations = [
     altImage: "alt", //TODO: add alt text
     isImageLeft: true,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/oglądaj", //TODO: update URL
+    goToSectionURL: "/galeria-zdjec?page=oglądaj&section=section3", //TODO: update URL
   },
 ];
 
