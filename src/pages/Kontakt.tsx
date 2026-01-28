@@ -26,11 +26,19 @@ const Kontakt = () => {
 
       {/* Contact Info Section */}
       <section className="section-padding pt-0 bg-card">
-        <div className="container-custom">
+        <div className="container-custom ">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Details */}
             <div>
               <div className="space-y-6">
+                <div className="rounded-lg bg-secondary p-4">
+                  <p className="text-lg font-medium text-accent pb-2">
+                    💡 Pro tip
+                  </p>
+                  <h3 className="font-semibold text-foreground pl-2">
+                    Przede wszystkim działamy zdalnie!
+                  </h3>
+                </div>
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Mail className="w-6 h-6 text-accent" />
@@ -140,7 +148,7 @@ const Kontakt = () => {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2314.6751595261994!2d18.53881397684099!3d54.51838097265935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fda73817f73adf%3A0x57f7c8d93e3d5c7a!2sWolno%C5%9Bci%2016%2C%2081-327%20Gdynia!5e0!3m2!1spl!2spl!4v1706000000000!5m2!1spl!2spl"
                 width="100%"
-                height="450"
+                height="570"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"

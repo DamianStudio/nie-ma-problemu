@@ -26,8 +26,8 @@ const GaleriaZdjec = () => {
   const touchStartX = useRef<number | null>(null);
   const touchEndX = useRef<number | null>(null);
 
-  // TODO podpiąć firebase storage i dynamicznie ładować obrazy ze storage na podstawie query paramów
   useEffect(() => {
+    // TODO podpiąć firebase storage i dynamicznie ładować obrazy ze storage na podstawie query paramsów
     console.log("page:", page);
     console.log("section:", section);
     console.log("hint:", hint);
@@ -43,7 +43,7 @@ const GaleriaZdjec = () => {
       doorsHandle,
     ];
     setGalleryImages(galleryImagesMOCK);
-  }, [section, page, hint]);
+  }, [section, page, hint]); // dependencies in case we want to reload images on param change
 
   const goToPrevious = useCallback(() => {
     setCurrentIndex((prev) =>
@@ -117,7 +117,10 @@ const GaleriaZdjec = () => {
         {/* Fixed Hint Button */}
         {hint === "klamki" && (
           <button
-            onClick={() => navigate(page)}
+            onClick={() =>
+              //TODO: update URL
+              navigate("/galeria-zdjec?page=otwieraj&section=section5")
+            }
             className="fixed bottom-4 right-4 md:right-8 z-50 flex items-center gap-2 bg-background/80 backdrop-blur-sm text-primary hover:text-foreground hover:bg-background px-3 py-2 rounded-full shadow-lg transition-colors"
           >
             <DoorClosed className="w-5 h-5" />
