@@ -2,7 +2,7 @@ import { useState, useRef, useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSearchParams } from "react-router-dom";
 import Layout from "@/components/Layout";
-import { ArrowLeft, ArrowRight, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, X, DoorClosed } from "lucide-react";
 import { cn, extractImageNameFromPath } from "@/lib/utils";
 
 import doorsHidden from "@/assets/doors-hidden.jpg";
@@ -17,8 +17,9 @@ const GaleriaZdjec = () => {
   const navigate = useNavigate();
 
   const [searchParams] = useSearchParams();
-  const page = `/${searchParams.get("page") ?? ""}`;
-  const title = searchParams.get("title") ?? "";
+  const page = `/${searchParams.get("page") ?? ""}`; // e.g., "/otwieraj"
+  const section = searchParams.get("section") ?? ""; // e.g., "section1"
+  const hint = searchParams.get("hint") ?? ""; // e.g., "klamki"
 
   const [galleryImages, setGalleryImages] = useState<string[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,8 +28,9 @@ const GaleriaZdjec = () => {
 
   // TODO podpiąć firebase storage i dynamicznie ładować obrazy ze storage na podstawie query paramów
   useEffect(() => {
-    console.log("Page from query param:", page);
-    console.log("Title from query param:", title);
+    console.log("page:", page);
+    console.log("section:", section);
+    console.log("hint:", hint);
     const galleryImagesMOCK = [
       doorsHidden,
       doorsClassic,
@@ -41,7 +43,7 @@ const GaleriaZdjec = () => {
       doorsHandle,
     ];
     setGalleryImages(galleryImagesMOCK);
-  }, [title, page]);
+  }, [section, page, hint]);
 
   const goToPrevious = useCallback(() => {
     setCurrentIndex((prev) =>
@@ -106,14 +108,24 @@ const GaleriaZdjec = () => {
         {/* Fixed Close Button */}
         <button
           onClick={() => navigate(page)}
-          className="fixed top-20 right-4 md:right-8 z-50 flex items-center gap-2 bg-background/90 backdrop-blur-sm text-muted-foreground hover:text-foreground hover:bg-background px-3 py-2 rounded-full shadow-lg transition-colors"
+          className="fixed top-24 right-4 md:right-8 z-50 flex items-center gap-2 bg-background/80 backdrop-blur-sm text-muted-foreground hover:text-foreground hover:bg-background px-2 md:px-3 py-2 rounded-full shadow-lg transition-colors"
         >
           <X className="w-5 h-5" />
           <span className="hidden sm:inline">Zamknij</span>
         </button>
 
-        <div className="container-custom">
+        {/* Fixed Hint Button */}
+        {hint === "klamki" && (
+          <button
+            onClick={() => navigate(page)}
+            className="fixed bottom-4 right-4 md:right-8 z-50 flex items-center gap-2 bg-background/80 backdrop-blur-sm text-primary hover:text-foreground hover:bg-background px-3 py-2 rounded-full shadow-lg transition-colors"
+          >
+            <DoorClosed className="w-5 h-5" />
+            <span>Pamiętaj o klamkach</span>
+          </button>
+        )}
 
+        <div className="container-custom">
           {/* Main Image Display */}
           <div className="relative mb-6">
             <div

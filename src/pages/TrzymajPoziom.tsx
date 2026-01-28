@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
-import SectionHeader from "@/components/SectionHeader";
 import { ArrowRight } from "lucide-react";
 import heroFloors from "@/assets/hero-floors.jpg";
-import heroDoors from "@/assets/hero-doors.png";
 import floor1 from "@/assets/floor-1.jpg";
 import floor2 from "@/assets/floor-2.jpg";
 import floor3 from "@/assets/floor-3.jpg";
@@ -19,7 +17,7 @@ const keepStandards = [
     altImage: "alt", //TODO: add alt text
     isImageLeft: true,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/trzymaj-poziom", //TODO: update URL
+    goToSectionURL: "/galeria-zdjec?page=trzymaj-poziom&section=section1", //TODO: update URL
   },
   {
     title: "Trzymaj poziom 2",
@@ -28,7 +26,7 @@ const keepStandards = [
     altImage: "alt", //TODO: add alt text
     isImageLeft: false,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/trzymaj-poziom", //TODO: update URL
+    goToSectionURL: "/galeria-zdjec?page=trzymaj-poziom&section=section2", //TODO: update URL
   },
   {
     title: "Trzymaj poziom 3",
@@ -37,7 +35,7 @@ const keepStandards = [
     altImage: "alt", //TODO: add alt text
     isImageLeft: true,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/trzymaj-poziom", //TODO: update URL
+    goToSectionURL: "/galeria-zdjec?page=trzymaj-poziom&section=section3", //TODO: update URL
   },
   {
     title: "Trzymaj poziom 4",
@@ -46,7 +44,7 @@ const keepStandards = [
     altImage: "alt", //TODO: add alt text
     isImageLeft: false,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/trzymaj-poziom", //TODO: update URL
+    goToSectionURL: "/galeria-zdjec?page=trzymaj-poziom&section=section4", //TODO: update URL
   },
 ];
 

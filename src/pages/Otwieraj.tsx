@@ -20,8 +20,7 @@ const doorTypes = [
     altImage: "Drzwi z ukrytą ościeżnicą",
     isImageLeft: true,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL:
-      "/galeria-zdjec?page=otwieraj&title=drzwi-z-ukryta-oscieznica",
+    goToSectionURL: "/galeria-zdjec?page=otwieraj&section=section1&hint=klamki", //TODO: update URL
   },
   {
     title: "Drzwi przesuwne",
@@ -31,7 +30,7 @@ const doorTypes = [
     altImage: "Drzwi przesuwne",
     isImageLeft: false,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/galeria-zdjec?page=otwieraj&title=drzwi-przesuwne",
+    goToSectionURL: "/galeria-zdjec?page=otwieraj&section=section2&hint=klamki", //TODO: update URL
   },
   {
     title: "Drzwi klasyczne",
@@ -41,7 +40,7 @@ const doorTypes = [
     altImage: "Drzwi klasyczne",
     isImageLeft: true,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/galeria-zdjec?page=otwieraj&title=drzwi-klasyczne",
+    goToSectionURL: "/galeria-zdjec?page=otwieraj&section=section3&hint=klamki", //TODO: update URL
   },
   {
     title: "Rozwiązania szklane",
@@ -51,7 +50,7 @@ const doorTypes = [
     altImage: "Drzwi szklane",
     isImageLeft: false,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/galeria-zdjec?page=otwieraj&title=drzwi-szklane",
+    goToSectionURL: "/galeria-zdjec?page=otwieraj&section=section4&hint=klamki", //TODO: update URL
   },
 ];
 
@@ -107,7 +106,7 @@ const Otwieraj = () => {
                 przesuwnych oraz rozwiązania bezklamkowe (push-to-open) dla
                 wnętrz ultraminimalistycznych."
             goToSectionName="Zobacz galerię klamek"
-            goToSectionURL="/galeria-zdjec?page=otwieraj&title=klamki-nowoczesne-i-minimalistyczne"
+            goToSectionURL="/galeria-zdjec?page=otwieraj&section=section5" //TODO: update URL
             goToSectionBg
           />
         </div>
