@@ -103,17 +103,16 @@ const GaleriaZdjec = () => {
         onKeyDown={handleKeyDown}
         tabIndex={0}
       >
+        {/* Fixed Close Button */}
+        <button
+          onClick={() => navigate(page)}
+          className="fixed top-20 right-4 md:right-8 z-50 flex items-center gap-2 bg-background/90 backdrop-blur-sm text-muted-foreground hover:text-foreground hover:bg-background px-3 py-2 rounded-full shadow-lg transition-colors"
+        >
+          <X className="w-5 h-5" />
+          <span className="hidden sm:inline">Zamknij</span>
+        </button>
+
         <div className="container-custom">
-          {/* Header */}
-          <div className="flex items-center justify-between mb-8">
-            <button
-              onClick={() => navigate(page)}
-              className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-            >
-              <X className="w-5 h-5" />
-              <span className="hidden sm:inline">Zamknij</span>
-            </button>
-          </div>
 
           {/* Main Image Display */}
           <div className="relative mb-6">
