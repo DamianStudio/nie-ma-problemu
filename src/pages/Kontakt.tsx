@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
-import SectionHeader from "@/components/SectionHeader";
+
 import {
   Phone,
   Mail,
