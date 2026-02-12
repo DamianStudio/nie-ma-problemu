@@ -1,24 +1,17 @@
 import { useState, useRef, useCallback, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useSearchParams } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { ArrowLeft, ArrowRight, X, DoorClosed } from "lucide-react";
 import { cn, extractImageNameFromPath } from "@/lib/utils";
 
-import doorsHidden from "@/assets/doors-hidden.jpg";
-import doorsClassic from "@/assets/doors-classic.jpg";
-import doorsSliding from "@/assets/doors-sliding.jpg";
-import doorsGlass from "@/assets/doors-glass.jpg";
-import doorsHandle from "@/assets/doors-handle.png";
-
 const minSwipeDistance = 50;
 
-const GaleriaZdjec = () => {
+const ImageGallery = ({images}: {images: string[]}) => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   const [searchParams] = useSearchParams();
-  const page = `/${searchParams.get("page") ?? ""}`; // e.g., "/otwieraj"
-  const section = searchParams.get("section") ?? ""; // e.g., "section1"
   const hint = searchParams.get("hint") ?? ""; // e.g., "klamki"
 
   const [galleryImages, setGalleryImages] = useState<string[]>([]);
@@ -28,22 +21,10 @@ const GaleriaZdjec = () => {
 
   useEffect(() => {
     // TODO podpiąć firebase storage i dynamicznie ładować obrazy ze storage na podstawie query paramsów
-    console.log("page:", page);
-    console.log("section:", section);
     console.log("hint:", hint);
-    const galleryImagesMOCK = [
-      doorsHidden,
-      doorsClassic,
-      doorsSliding,
-      doorsGlass,
-      doorsHidden,
-      doorsClassic,
-      doorsSliding,
-      doorsGlass,
-      doorsHandle,
-    ];
-    setGalleryImages(galleryImagesMOCK);
-  }, [section, page, hint]); // dependencies in case we want to reload images on param change
+
+    setGalleryImages(images);
+  }, [hint]); // dependencies in case we want to reload images on param change
 
   const goToPrevious = useCallback(() => {
     setCurrentIndex((prev) =>
@@ -92,10 +73,10 @@ const GaleriaZdjec = () => {
       } else if (e.key === "ArrowRight") {
         goToNext();
       } else if (e.key === "Escape") {
-        navigate(page);
+        navigate(location.pathname.split("/").slice(0, -1).join("/"));
       }
     },
-    [goToPrevious, goToNext, navigate, page],
+    [goToPrevious, goToNext, navigate, location.pathname],
   );
 
   return (
@@ -107,7 +88,7 @@ const GaleriaZdjec = () => {
       >
         {/* Fixed Close Button */}
         <button
-          onClick={() => navigate(page)}
+          onClick={() => navigate(location.pathname.split("/").slice(0, -1).join("/"))}
           className="fixed top-24 right-4 md:right-8 z-50 flex items-center gap-2 bg-background/80 backdrop-blur-sm text-muted-foreground hover:text-foreground hover:bg-background px-2 md:px-3 py-2 rounded-full shadow-lg transition-colors"
         >
           <X className="w-5 h-5" />
@@ -117,10 +98,7 @@ const GaleriaZdjec = () => {
         {/* Fixed Hint Button */}
         {hint === "klamki" && (
           <button
-            onClick={() =>
-              //TODO: update URL
-              navigate("/galeria-zdjec?page=otwieraj&section=section5")
-            }
+            onClick={() => navigate("/otwieraj/otwieraj-galeria-5")}
             className="fixed bottom-4 right-4 md:right-8 z-50 flex items-center gap-2 bg-background/80 backdrop-blur-sm text-primary hover:text-foreground hover:bg-background px-3 py-2 rounded-full shadow-lg transition-colors"
           >
             <DoorClosed className="w-5 h-5" />
@@ -193,6 +171,8 @@ const GaleriaZdjec = () => {
                   src={image}
                   alt={extractImageNameFromPath(image)}
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </button>
             ))}
@@ -208,4 +188,4 @@ const GaleriaZdjec = () => {
   );
 };
 
-export default GaleriaZdjec;
+export default ImageGallery;
