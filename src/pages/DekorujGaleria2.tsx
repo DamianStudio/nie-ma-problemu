@@ -1,13 +1,13 @@
 import ImageGallery from '@/components/ImageGallery'
 
-import doorsSliding from "@/assets/doors-sliding.jpg";
 import doorsGlass from "@/assets/doors-glass.jpg";
 import doorsHandle from "@/assets/doors-handle.png";
+import doorsSliding from "@/assets/doors-sliding.jpg";
 
 const images: string[] = [
-    doorsSliding,
-    doorsGlass,
-    doorsHandle,
+  doorsGlass,
+  doorsHandle,
+  doorsSliding,
 ];
 
 const DekorujGaleria2 = () => {
