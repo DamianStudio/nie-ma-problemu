@@ -18,7 +18,7 @@ const decorations = [
     altImage: "alt", //TODO: add alt text
     isImageLeft: true,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/galeria-zdjec?page=dekoruj&section=section1", //TODO: update URL
+    goToSectionURL: "/dekoruj/dekoruj-galeria-1",
   },
   {
     title: "Sypialnia w stylu botanicznym",
@@ -28,7 +28,7 @@ const decorations = [
     altImage: "alt", //TODO: add alt text
     isImageLeft: false,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/galeria-zdjec?page=dekoruj&section=section2", //TODO: update URL
+    goToSectionURL: "/dekoruj/dekoruj-galeria-2",
   },
   {
     title: "Salon z akcentem złota",
@@ -38,7 +38,7 @@ const decorations = [
     altImage: "alt", //TODO: add alt text
     isImageLeft: true,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/galeria-zdjec?page=dekoruj&section=section3", //TODO: update URL
+    goToSectionURL: "/dekoruj/dekoruj-galeria-3",
   },
 ];
 

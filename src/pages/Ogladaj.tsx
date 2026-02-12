@@ -4,8 +4,8 @@ import PageHero from "@/components/PageHero";
 import { ArrowRight } from "lucide-react";
 import heroRealizations from "@/assets/hero-realizations.jpg";
 import realization1 from "@/assets/realization1.png";
-import realization2 from "@/assets/realization2.png";
-import realization3 from "@/assets/realization3.png";
+// import realization2 from "@/assets/realization2.png"; // TODO: remove
+// import realization3 from "@/assets/realization3.png"; // TODO: remove
 import heroDoors from "@/assets/hero-doors.png";
 import BaseSection from "@/components/BaseSection";
 
@@ -19,31 +19,32 @@ const realizations = [
     altImage: "alt", //TODO: add alt text
     isImageLeft: true,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/galeria-zdjec?page=ogladaj&section=section1", //TODO: update URL
+    goToSectionURL: "/ogladaj/ogladaj-galeria-1",
   },
 
-  {
-    surtitle: "Sopot",
-    title: "Minimalistyczne drzwi ukryte",
-    description:
-      "Drzwi z ukrytą ościeżnicą pokryte tapetą strukturalną. Doskonałe wtopienie w ścianę dla maksymalnej elegancji.",
-    baseImage: realization2,
-    altImage: "alt", //TODO: add alt text
-    isImageLeft: false,
-    goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/galeria-zdjec?page=ogladaj&section=section2", //TODO: update URL
-  },
-  {
-    surtitle: "Gdańsk",
-    title: "Eleganckie przejście",
-    description:
-      "Klasyczne drzwi z tapetą o subtelnej fakturze. Nowoczesny minimalizm w każdym detalu.",
-    baseImage: realization3,
-    altImage: "alt", //TODO: add alt text
-    isImageLeft: true,
-    goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/galeria-zdjec?page=ogladaj&section=section3", //TODO: update URL
-  },
+  // TODO: remove
+  // {
+  //   surtitle: "Sopot",
+  //   title: "Minimalistyczne drzwi ukryte",
+  //   description:
+  //     "Drzwi z ukrytą ościeżnicą pokryte tapetą strukturalną. Doskonałe wtopienie w ścianę dla maksymalnej elegancji.",
+  //   baseImage: realization2,
+  //   altImage: "alt", //TODO: add alt text
+  //   isImageLeft: false,
+  //   goToSectionName: "Zobacz galerię",
+  //   goToSectionURL: "/ogladaj/ogladaj-galeria-2",
+  // },
+  // {
+  //   surtitle: "Gdańsk",
+  //   title: "Eleganckie przejście",
+  //   description:
+  //     "Klasyczne drzwi z tapetą o subtelnej fakturze. Nowoczesny minimalizm w każdym detalu.",
+  //   baseImage: realization3,
+  //   altImage: "alt", //TODO: add alt text
+  //   isImageLeft: true,
+  //   goToSectionName: "Zobacz galerię",
+  //   goToSectionURL: "/ogladaj/ogladaj-galeria-3",
+  // },
 ];
 
 const Ogladaj = () => {

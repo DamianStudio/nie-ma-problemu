@@ -17,7 +17,7 @@ const keepStandards = [
     altImage: "alt", //TODO: add alt text
     isImageLeft: true,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/galeria-zdjec?page=trzymaj-poziom&section=section1", //TODO: update URL
+    goToSectionURL: "/trzymaj-poziom/trzymaj-poziom-galeria-1",
   },
   {
     title: "Trzymaj poziom 2",
@@ -26,7 +26,7 @@ const keepStandards = [
     altImage: "alt", //TODO: add alt text
     isImageLeft: false,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/galeria-zdjec?page=trzymaj-poziom&section=section2", //TODO: update URL
+    goToSectionURL: "/trzymaj-poziom/trzymaj-poziom-galeria-2",
   },
   {
     title: "Trzymaj poziom 3",
@@ -35,7 +35,7 @@ const keepStandards = [
     altImage: "alt", //TODO: add alt text
     isImageLeft: true,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/galeria-zdjec?page=trzymaj-poziom&section=section3", //TODO: update URL
+    goToSectionURL: "/trzymaj-poziom/trzymaj-poziom-galeria-3",
   },
   {
     title: "Trzymaj poziom 4",
@@ -44,7 +44,7 @@ const keepStandards = [
     altImage: "alt", //TODO: add alt text
     isImageLeft: false,
     goToSectionName: "Zobacz galerię",
-    goToSectionURL: "/galeria-zdjec?page=trzymaj-poziom&section=section4", //TODO: update URL
+    goToSectionURL: "/trzymaj-poziom/trzymaj-poziom-galeria-4",
   },
 ];
 
